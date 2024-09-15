@@ -17,16 +17,16 @@ redirect_from:
 - 无人机通信与网络
 - 车联网 
 
-# 🎓 **个人经历**
-- 2022.09 至今，吉林大学，吉林大学计算机科学与技术学院，孙庚副教教授，博士后（吉林大学鼎新学者支持计划入选者）
+# 🎓 **学习与工作经历**
+- 2022.09 至今，吉林大学，吉林大学计算机科学与技术学院，[孙庚副教授](https://sungeng207.github.io/)
 - 2019.09 至 2020.10，加拿大滑铁卢大学，车辆工程，联合培养博士，导师：Prof. Dongpu Cao
-- 2018.09 至 2022.7，吉林大学，计算机应用技术，博士，导师：刘衍珩教授
+- 2018.09 至 2022.07，吉林大学，计算机应用技术，博士，导师：刘衍珩教授
 - 2015.09 至 2018.07，吉林大学，计算机应用技术，硕士，导师：刘衍珩教授
 - 2011.09 至 2015.07，吉林大学，软件工程，学士
 
 # 📝 发表文章
-1.  **Zemin Sun**, Geng Sun*, Yanheng Liu, Jian Wang, and Dongpu Cao. [BARGAIN-MATCH: A game theoretical approach for resource allocation and task offloading in vehicular edge computing networks](https://ieeexplore.ieee.org/abstract/document/10024868/). *IEEE Transactions on Mobile Computing*, 23(2), 2024: 1655-1673. **(IF=6.075, CCF-A 类)**
-2.  **Zemin Sun**, Geng Sun, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, [A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC](https://arxiv.org/abs/2404.04597), *IEEE International Conference on Computer Communications* (*IEEE INFOCOM 2024*). (CCF-A类会议)**
+1.  **Zemin Sun**, Geng Sun\*, Yanheng Liu, Jian Wang, and Dongpu Cao. [BARGAIN-MATCH: A game theoretical approach for resource allocation and task offloading in vehicular edge computing networks](https://ieeexplore.ieee.org/abstract/document/10024868/). *IEEE Transactions on Mobile Computing*, 23(2), 2024: 1655-1673. **(IF=7.9) (SCI, CCF-A 类) (ESI高被引论文，IEEE TMC Popular Article)**
+2.  **Zemin Sun**, Geng Sun\*, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, [A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC](https://arxiv.org/abs/2404.04597), *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024). **(CCF-A类会议)**
 3. Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung, [Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/). *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=6.075, CCF-A 期刊)**
 4. Geng Sun, Xiaoya Zheng, **Zemin Sun\***, Qingqing Wu\*, Jiahui Li, Yanheng Liu, and Victor CM Leung. [UAV-enabled Secure Communications via Collaborative Beamforming with Imperfect Eavesdropper Information](https://ieeexplore.ieee.org/abstract/document/10119186/), *IEEE Transactions on Mobile Computing*, 2023, doi: 10.1109/TMC.2024.3350886. **(IF=6.075, CCF-A 期刊)**
 5. **Zemin Sun**, Yanheng Liu, Jian Wang*, Fang Mei, Weiwen Deng, and Yuming Ge. [Non-cooperative game of throughput and hash length for adaptive merkle tree in mobile wireless networks](https://ieeexplore.ieee.org/abstract/document/8642907/). *IEEE Transactions on Vehicular Technology*, 68(5), 2019: 4625-4650. **(IF= 5.379, 中科院2区)**
