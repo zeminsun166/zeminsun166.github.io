@@ -33,8 +33,8 @@ redirect_from:
 5. Geng Sun, Xiaoya Zheng, **Zemin Sun\***, Qingqing Wu\*, Jiahui Li, Yanheng Liu, and Victor CM Leung. [UAV-enabled Secure Communications via Collaborative Beamforming with Imperfect Eavesdropper Information](https://ieeexplore.ieee.org/abstract/document/10119186/), *IEEE Transactions on Mobile Computing*, 23(4): 3291-3308, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊)**
 6. **Zemin Sun**, Yanheng Liu, Jian Wang*, Fang Mei, Weiwen Deng, and Yuming Ge. [Non-cooperative Game of Throughput and Hash Length for Adaptive Merkle Tree in Mobile Wireless Networks](https://ieeexplore.ieee.org/abstract/document/8642907/). *IEEE Transactions on Vehicular Technology*, 68(5): 4625-4650, 2019. **(IF=5.3) (中科院2区)**
 7. **Zemin Sun**, Yanheng Liu\*, Jian Wang, Guofa Li, Carie Anil, Keqiang Li, Xinyu Guo, Geng Sun\*, Daxin Tian\*, and Dongpu Cao. [Applications of Game Theory in Vehicular Networks: A Survey](https://ieeexplore.ieee.org/abstract/document/9524815/). *IEEE Communications Surveys & Tutorials*, 23(4): 2660-2710, 2021. **(IF=33.8) (中科院1区)**
-8. **Zemin Sun**, Yanheng Liu, Jian Wang*, Rundong Yu, and Dongpu Cao. [Cross-layer Tradeoff of QoS and Security in Vehicular Ad Hoc Networks: A Game Theoretical Approach](https://www.sciencedirect.com/science/article/pii/S1389128621001390). *Computer Networ*ks, 192: 108031,2021. **(IF=5.4) (CCF-B 期刊)**
-9. Geng Sun, Yixian Wang, **Zemin Sun\***, Long He, and Xiaoya Zheng, [Multi-objective Optimization for Multi-UAV-assisted Mobile Edge Computing](https://arxiv.org/abs/2404.15292), *IEEE International Conference on Communications* (*IEEE ICC 2022*). **(CCF-C类会议)**
+8. **Zemin Sun**, Yanheng Liu, Jian Wang*, Rundong Yu, and Dongpu Cao. [Cross-layer Tradeoff of QoS and Security in Vehicular Ad Hoc Networks: A Game Theoretical Approach](https://www.sciencedirect.com/science/article/pii/S1389128621001390). *Computer Networ*ks, 192: 108031,2021. **(IF=5.4) (CCF B 期刊)**
+9. Geng Sun, Yixian Wang, **Zemin Sun\***, Long He, and Xiaoya Zheng, [Multi-objective Optimization for Multi-UAV-assisted Mobile Edge Computing](https://arxiv.org/abs/2404.15292), *IEEE International Conference on Communications* (*IEEE ICC 2022*). **(CCF C类会议)**
 10. Wanjun Zhang, Aimin Wang, Long He, **Zemin Sun\***, Jiahui Li and Geng Sun, [Task Offloading in UAV-assisted Vehicular Edge Computing Networks](https://link.springer.com/chapter/10.1007/978-981-97-0811-6_23), *International Conference on Algorithms and Architectures for Parallel Processing*, (*ICA3PP 2023*). **(CCF C类会议)**
 11. Geng Sun, Jiayun Zhang, **Zemin Sun\***, Long He, and Jiahui Li. [Collaborative Task offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/9973467/), *IEEE International Conference on Mobile Ad Hoc and Smart Systems (IEEE MASS 2022)*. **(CCF C类会议)**
 12. Geng Sun, Long He, **Zemin Sun\***, Jiayun Zhang, and Jiahui Li, [Task Offloading for Post-disaster Rescue in Vehicular Fog Computing-assisted UAV Networks](https://ieeexplore.ieee.org/abstract/document/10076577/), *IEEE 18th International Conference on Mobility, Sensing and Networking (IEEE MSN 2022)*. **(CCF C类会议)**
@@ -48,7 +48,7 @@ redirect_from:
 2. 国家自然科学基金面上项目，卫星物联网地发天收协作波束成形通信理论与优化方法研究(62471200)，2025-01至2028-12, 49万 (参与者)
 3. 国家自然科学基金面上项目，5G异构车联网通信质量及安全的博弈理论与关键技术研究 (62172186)，2022-01至2025-12, 58万 (参与者)
 4. 国家自然科学基金面上项目，智能网联汽车轨迹规划与通信协作的联合优化理论与关键技术研究(61872158)，2019-01至2022-12，64万 (参与者)
-5. 国家自然科学基金 国际(地区)合作与交流项目，以用户为中心的情景感知的车载自组网安全和隐私定量评估理论 (61711540304)，2017-07至2019-06，15万 (参与者)
+5. 国家自然科学基金国际(地区)合作与交流项目，以用户为中心的情景感知的车载自组网安全和隐私定量评估理论 (61711540304)，2017-07至2019-06，15万 (参与者)
 6. 吉林省科技发展计划项目重点研发项目，无人机辅助的空路协同车联网高效通信关键技术研究 (20210201072GX)，2021-07至2024-06，50万，(参与者)
 7. 吉林省科技发展计划项目国际合作项目，物联网中协作波束成形旁瓣电平抑制与能耗控制的多目标优化理论与技术研究 (20190701019GH)，2019.01至2021.12，20万 (参与者)
 
@@ -64,7 +64,7 @@ redirect_from:
 - 论文"BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks" 获2022-2023中国电子学会物联网专业委员会优秀期刊论文
 
 # 获奖情况
-- 中国商业联合会科学技术奖二等奖 (2023年)：分布式协作波束成形动态多目标优化方法及应用 (8/13)
+- 中国商业联合会科学技术奖二等奖 (2023年)：分布式协作波束成形动态多目标优化方法及应用 
 - ACM中国优博奖 (2024年，长春分会)
 - 国家留学基金委公派留学奖学金
 - 硕士研究生国家奖学金
