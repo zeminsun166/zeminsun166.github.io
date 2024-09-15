@@ -76,6 +76,7 @@ ins {
 ul {
   padding-inline-start: 2em;
   margin-block-start: 0.5em;
+  text-align: justify;
 }
 
 del a {
@@ -106,6 +107,7 @@ blockquote {
   padding-right: 1em;
   font-style: italic;
   border-left: 0.25em solid $primary-color;
+  text-align: justify;
 
   cite {
     font-style: italic;
@@ -174,11 +176,13 @@ hr {
 ul li,
 ol li {
   margin-bottom: 0.5em;
+  text-align: justify;
 }
 
 li ul,
 li ol {
   margin-top: 0.5em;
+  text-align: justify;
 }
 
 /*
