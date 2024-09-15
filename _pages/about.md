@@ -66,7 +66,7 @@ redirect_from:
 # 获奖情况
 - 中国商业联合会科学技术奖二等奖 (2023年)：分布式协作波束成形动态多目标优化方法及应用 
 - ACM中国优博奖 (2024年，长春分会)
-- 论文"BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks" 获2022-2023中国电子学会物联网专业委员会优秀期刊论文
+- 论文\"BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks" 获2022-2023中国电子学会物联网专业委员会优秀期刊论文
 - 国家留学基金委公派留学奖学金
 - 硕士研究生国家奖学金
 - 吉林大学2018年优秀毕业研究生
