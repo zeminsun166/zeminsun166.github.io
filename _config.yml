@@ -22,13 +22,13 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "孙泽敏"
-  avatar           : "images/avatar.jpg"
+  avatar           : "images/avatar.png"
   bio              : "Zemin Sun"
   location         : "Jilin, China"
   employer         :
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=TJtQW8gAAAAJ"
-  email            : "laurasun166@gmail.com"
+  email            : "sunzemin@jlu.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
