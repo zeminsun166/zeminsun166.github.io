@@ -38,7 +38,9 @@ redirect_from:
 11. Geng Sun, Jiayun Zhang, **Zemin Sun\***, Long He, and Jiahui Li. [Collaborative Task offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/9973467/), *IEEE International Conference on Mobile Ad Hoc and Smart Systems (IEEE MASS 2022)*. **(CCF C类会议)**
 12. Geng Sun, Long He, **Zemin Sun\***, Jiayun Zhang, and Jiahui Li, [Task Offloading for Post-disaster Rescue in Vehicular Fog Computing-assisted UAV Networks](https://ieeexplore.ieee.org/abstract/document/10076577/), *IEEE 18th International Conference on Mobility, Sensing and Networking (IEEE MSN 2022)*. **(CCF C类会议)**
 13. Ye Wang, Yanheng Liu, **Zemin Sun\***, Lingling Liu, Jiahui Li, and Geng Sun, [Priority-aware Task Offloading and Resource Allocation in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10076601/), *IEEE 18th International Conference on Mobility, Sensing and Networking (IEEE MSN 2022)*. **(CCF C类会议)**
-14. Geng Sun, Xiaoya Zheng, **Zemin Sun**, Qingqing Wu, Jiahui Li, Yanheng Liu, Victor CM Leung, [UAV-enabled secure communications via collaborative beamforming with imperfect eavesdropper information]
+14. Geng Sun, Jiahui Li, Aimin Wang\*, Qingqing Wu\*, **Zemin Sun**, Yanheng Liu. Secure and Energy-Efficient UAV Relay Communications Exploiting Collaborative Beamforming, *IEEE Transactions on Communications*, 70(8), 5401-5416, 2022. **(IF=6.166) (SCI, CCF B类期刊)**
+15. Geng Sun, Jiahui Li, Aimin Wang\*, Qingqing Wu, **Zemin Sun**, Yanheng Liu, Shuang Liang. Collaborative Beamforming for UAV Networks Exploiting Swarm Intelligence, *IEEE Wireless Communications*, 29(4): 10-17, 2022. **(IF=11.39) (SCI, 中科院1区)**
+16. Long He, Geng Sun\*, **Zemin Sun**, Pengfei Wang, Jiahui Li, Shuang Liang, Dusit Niyato, An Online Joint Optimization Approach for QoE Maximization in UAV-Enabled Mobile Edge Computing, *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)**
 
 # 🎖️ 科研项目
 1. 中国博士后基金面上项目，移动边缘网络任务卸载及资源分配弹性协同优化方法研究（2023M731282），8万元（**项目负责人**）
