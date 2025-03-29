@@ -25,10 +25,10 @@ redirect_from:
 - 2011.09 至 2015.07，吉林大学，软件工程，学士
 
 # 发表文章
-1. Zifan Lang, Guixia Liu, Geng Sun, Jiahui Li, **Zemin Sun**, Jiacheng Wang, Victor C.M. Leung. AoI-Sensitive Data Forwarding with Distributed Beamforming in UAV-Assisted IoT. AoI-Sensitive Data Forwarding with Distributed Beamforming in UAV-Assisted IoT. 2025 IEEE International Conference on Communications (IEEE ICC 2025). **(CCF C类会议)**
-2. Yixian Wang, Geng Sun\*, **Zemin Sun\***, Long He, Jiacheng Wang, Shiwen Mao. IRS-assisted Edge Computing for Vehicular Networks: A Generative Diffusion Model-based Stackelberg Game Approach. IEEE International Conference on Communications (IEEE ICC 2025). **(CCF C类会议)**
-3. Shuang Liang, Minhao Yin, Wenwen Xie, **Zenmin Sun\***, Jiahui Li\*, Jiacheng Wang, and Hongyang Du. [UAV-Enabled Secure Data Collection and Energy Transfer in IoT via Diffusion Model-Enhanced Deep Reinforcement Learning](https://ieeexplore.ieee.org/abstract/document/10812918?casa_token=1StyqOaYX1EAAAAA:0KfoybZfMCuB2eZQD0jm4CRavMmkJSpe0xFsp8ePGF_6pzFN4G7HuvgN0sysqJ-Jee5a1304_g), IEEE Internet of Things Journal, 2024. **(IF=8.2) (SCI, 中科院1区)**
-4. **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404), IEEE Transactions on Mobile Computing. **(IF=7.9) (SCI, CCF A类期刊)**
+1. Zifan Lang, Guixia Liu, Geng Sun, Jiahui Li, **Zemin Sun**, Jiacheng Wang, Victor C.M. Leung. AoI-Sensitive Data Forwarding with Distributed Beamforming in UAV-Assisted IoT. AoI-Sensitive Data Forwarding with Distributed Beamforming in UAV-Assisted IoT. *2025 IEEE International Conference on Communications (IEEE ICC 2025)*. **(CCF C类会议)**
+2. Yixian Wang, Geng Sun\*, **Zemin Sun\***, Long He, Jiacheng Wang, Shiwen Mao. IRS-assisted Edge Computing for Vehicular Networks: A Generative Diffusion Model-based Stackelberg Game Approach. *IEEE International Conference on Communications (IEEE ICC 2025)*. **(CCF C类会议)**
+3. Shuang Liang, Minhao Yin, Wenwen Xie, **Zemin Sun\***, Jiahui Li\*, Jiacheng Wang, and Hongyang Du. [UAV-Enabled Secure Data Collection and Energy Transfer in IoT via Diffusion Model-Enhanced Deep Reinforcement Learning](https://ieeexplore.ieee.org/abstract/document/10812918?casa_token=1StyqOaYX1EAAAAA:0KfoybZfMCuB2eZQD0jm4CRavMmkJSpe0xFsp8ePGF_6pzFN4G7HuvgN0sysqJ-Jee5a1304_g), *IEEE Internet of Things Journal*, 2024. **(IF=8.2) (SCI, 中科院1区)**
+4. **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404), *IEEE Transactions on Mobile Computing*.* **(IF=7.9) (SCI, CCF A类期刊)**
 5. **Zemin Sun**, Geng Sun\*, Yanheng Liu, Jian Wang, and Dongpu Cao. [BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10024868/), *IEEE Transactions on Mobile Computing*, 23(2), 2024: 1655-1673. **(IF=7.9) (SCI, CCF A 类期刊) (ESI高被引论文，IEEE TMC Popular Article)**  
 6. **Zemin Sun**, Geng Sun\*, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, [A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC](https://arxiv.org/abs/2404.04597), *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)**  
 7. Geng Sun, Yixian Wang, **Zemin Sun\***, Qingqing Wu, Jiawen Kang, Dusit Niyato, Victor CM Leung. [Multi-objective Optimization for Multi-UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10643301), *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3446819. **(IF=7.9, CCF A类期刊）（IEEE TMC Popular Article)** 
@@ -64,10 +64,11 @@ redirect_from:
 3. 孙庚、王逸娴，**孙泽敏**、李家辉、何龙、张闯、郑晓雅、梁爽，一种多无人机辅助移动边缘计算的优化方法，专利号: CN 202411558942.1
 4. 孙庚、谢雯雯、李家辉、**孙泽敏**、梁爽、何龙，一种智能反射面辅助的无人机安全通信方法，专利号: CN 202311049636.0
 5. 孙庚、肖健、李家辉、**孙泽敏**、张闯、何龙，谢雯雯，梁爽，基于无人机协作波束成形的高速动态通信多目标优化方法，专利号: CN 202411022416.3 
-6. 李树静，刘衍珩，王健，孙庚，**孙泽敏**，张坤鹏，郑婷婷，一种基于TDMA的车联网中差异功率的基本安全报文广播方法，专利号: ZL201910499744.6 
+6. 李树静、刘衍珩、王健、孙庚、**孙泽敏**、张坤鹏、郑婷婷，一种基于TDMA的车联网中差异功率的基本安全报文广播方法，专利号: ZL201910499744.6 
 7. 王爱民、黄嘉玮、孙庚、李家辉、郑晓雅、**孙泽敏**、刘赛超、张闯，一种基于无人机蜂群的海上保密通信方法，专利号: CN202211444113.1
-8. 张雪琪，王爱民，刘玲玲，孙庚，吴静，**孙泽敏**，李家辉，潘弘洋，一种无人机辅助无线通信中的无人机部署优化方法，专利号: CN202410470965.0
-9. 孙庚，郑晓雅，李家辉，王爱民，梁爽，刘昭，**孙泽敏**，刘衍珩，一种无人机蜂群安全通信方法，专利号: ZL202210003107.6 
+8. 张雪琪、王爱民、刘玲玲、孙庚、吴静、**孙泽敏**、李家辉、潘弘洋，一种无人机辅助无线通信中的无人机部署优化方法，专利号: CN202410470965.0
+9. 孙庚、郑晓雅、李家辉、王爱民、梁爽、刘昭、**孙泽敏**、刘衍珩，一种无人机蜂群安全通信方法，专利号: ZL202210003107.6 
+
 
 # 学术兼职
 - 担任 IEEE TVT、 IEEE Open Journal of the Communications Society (IEEE OJCS)、 IEEE Transactions on Emerging Topics in Computing (IEEE TETC) 和 IEEE IoT-J 等国际高水平期刊的审稿人
