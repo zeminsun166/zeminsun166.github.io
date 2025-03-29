@@ -71,9 +71,17 @@ redirect_from:
 
 
 # 学术兼职
-- 担任 IEEE TVT、 IEEE Open Journal of the Communications Society (IEEE OJCS)、 IEEE Transactions on Emerging Topics in Computing (IEEE TETC) 和 IEEE IoT-J 等国际高水平期刊的审稿人
-- ICA3PP 2023 国际会议的技术委员会委员 
-
+- 中国通信学会会员
+- ICA3PP 2023 国际会议的技术委员会委员
+- 多个顶级期刊与学术会议审稿人
+  - IEEE Transactions on Mobile Computing
+  - IEEE Transactions on Communications
+  - IEEE Transactions on Wireless Communications
+  - IEEE Transactions on Vehicular Technology
+  - IEEE Internet of Things Journal
+  - IEEE Transactions on Network and Service Management
+  - IEEE Communications Magazine
+  - IEEE Transactions on Emerging Topics in Computing
 
 # 获奖情况
 - 中国商业联合会科学技术奖二等奖 (2023年)：分布式协作波束成形动态多目标优化方法及应用 
