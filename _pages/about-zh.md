@@ -1,11 +1,11 @@
 ---
-permalink: /
+permalink: /about/zh/
 title: ""
 excerpt: ""
 author_profile: true
+lang: zh
 redirect_from: 
-  - /about/
-  - /about.html
+  - /about-zh.html
 ---
 
 **孙泽敏**，博士，吉林大学计算机科学与技术学院助理研究员，入选吉林大学“鼎新学者”支持计划。2019年9月受国家留学基金委资助赴加拿大滑铁卢大学（University of Waterloo）公派留学， 2022年7月获吉林大学计算机应用技术专业博士学位，2018年获吉林大学计算机应用技术专业硕士学位， 2015年获吉林大学软件学院学士学位。曾获ACM中国优秀博士学位论文奖、中国电子学会物联网专家委员会优秀期刊论文、吉林大学一等研究生优秀奖学金和硕士研究生国家奖学金等奖励和荣誉称号。

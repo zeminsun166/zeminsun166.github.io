@@ -1,0 +1,25 @@
+#lang-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-size: 14px;
+  background: transparent;  /* 去掉背景 */
+  padding: 0;  /* 去掉内边距 */
+  border: none;  /* 去掉边框 */
+  color: black; /* 设置文本颜色 */
+}
+
+#lang-switcher a {
+  text-decoration: none;
+  color: #007acc; /* 设置链接颜色 */
+  margin: 0 10px; /* 设置两个链接之间的间距 */
+}
+
+#lang-switcher a.active {
+  font-weight: bold;  /* 高亮当前语言 */
+}
+
+#lang-switcher a:hover {
+  color: #005fa3;  /* 悬停时改变颜色 */
+}
