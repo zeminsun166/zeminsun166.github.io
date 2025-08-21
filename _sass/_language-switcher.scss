@@ -1,8 +1,9 @@
 // Language switcher styles
 .language-switcher {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 1rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 100;
   
   .lang-toggle-btn {
     background: transparent;
