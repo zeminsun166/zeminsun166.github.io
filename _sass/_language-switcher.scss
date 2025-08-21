@@ -1,3 +1,19 @@
+// 全局强制显示语言切换器文字
+.lang-text-mobile.show {
+  display: inline !important;
+  color: #7a8288 !important;
+  font-size: 1em !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: static !important;
+  clip: auto !important;
+  height: auto !important;
+  width: auto !important;
+  overflow: visible !important;
+  text-indent: 0 !important;
+  white-space: normal !important;
+}
+
 // Language switcher styles
 .language-switcher {
   .lang-toggle-btn {
@@ -72,15 +88,50 @@
         }
         
         .lang-text-mobile {
-          display: none;
-          color: inherit;
-          font-size: inherit;
-          font-weight: inherit;
+          display: none !important;
+          color: #7a8288 !important;
+          font-size: 1em !important;
+          font-weight: normal !important;
+          visibility: visible !important;
+          opacity: 1 !important;
           
           &.show {
             display: inline !important;
             color: #7a8288 !important;
             font-size: 1em !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+          }
+        }
+        
+        // 强制显示语言切换器中的文字
+        .greedy-nav .hidden-links .language-switcher .lang-text-mobile.show {
+          display: inline !important;
+          color: #7a8288 !important;
+          font-size: 1em !important;
+          visibility: visible !important;
+          opacity: 1 !important;
+          position: static !important;
+          clip: auto !important;
+          height: auto !important;
+          width: auto !important;
+        }
+        
+        // 覆盖所有可能的隐藏样式
+        .greedy-nav .hidden-links .language-switcher .lang-text-mobile {
+          &.show {
+            display: inline !important;
+            color: #7a8288 !important;
+            font-size: 1em !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            position: static !important;
+            clip: auto !important;
+            height: auto !important;
+            width: auto !important;
+            overflow: visible !important;
+            text-indent: 0 !important;
+            white-space: normal !important;
           }
         }
       }

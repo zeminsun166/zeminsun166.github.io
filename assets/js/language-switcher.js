@@ -25,9 +25,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 if (showWhen === currentLang) {
                     text.classList.add('show');
+                    // 强制设置所有可能的隐藏属性
                     text.style.display = 'inline';
+                    text.style.visibility = 'visible';
+                    text.style.opacity = '1';
                     text.style.color = '#7a8288';
                     text.style.fontSize = '1em';
+                    text.style.position = 'static';
+                    text.style.clip = 'auto';
+                    text.style.height = 'auto';
+                    text.style.width = 'auto';
                     console.log('Showing text:', text.textContent);
                 } else {
                     text.classList.remove('show');
@@ -57,6 +64,17 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Update mobile button text display
             updateMobileButtonDisplay();
+        }
+        
+        // Listen for menu state changes
+        const navButton = document.querySelector('.greedy-nav button');
+        if (navButton) {
+            navButton.addEventListener('click', () => {
+                // Wait for menu to expand/collapse, then update text
+                setTimeout(() => {
+                    updateMobileButtonDisplay();
+                }, 100);
+            });
         }
         
         if (langToggleDesktop) {
