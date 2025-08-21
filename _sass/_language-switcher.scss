@@ -49,38 +49,30 @@
   .greedy-nav .hidden-links {
     .language-switcher {
       display: block !important;
-      margin: 10px 0 !important;
-      padding: 10px 20px !important;
-      text-align: center !important;
-      border-bottom: 1px solid #e3e3e3 !important;
       
       .lang-toggle-btn {
-        width: auto !important;
-        height: auto !important;
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 10px 20px !important;
         background: transparent !important;
         border: none !important;
-        color: #667eea !important;
-        font-size: 1rem !important;
-        font-weight: 500 !important;
-        padding: 8px 16px !important;
-        margin: 0 auto !important;
-        border-radius: 4px !important;
+        color: #7a8288 !important;
+        font-size: 1em !important;
+        font-weight: normal !important;
+        text-align: left !important;
+        text-decoration: none !important;
+        cursor: pointer !important;
         
         &:hover {
-          background: #f0f0f0 !important;
+          color: #494e52 !important;
+          background: #e8eaed !important;
           transform: none !important;
+          border-radius: 0 !important;
         }
         
         .lang-text-mobile {
           display: none !important;
-          
-          &[data-show-when="zh"] {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-          }
-          
-          &[data-show-when="en"] {
-            font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
-          }
         }
       }
     }
