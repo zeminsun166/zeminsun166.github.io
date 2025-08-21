@@ -3,13 +3,11 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
-        <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me" class="nav-link" data-section="about-me">Homepage</a></li>
-          {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ link.url }}" class="nav-link" data-section="{{ link.url | replace: '#', '' }}">{{ link.title }}</a></li>
-          {% endfor %}
+        <ul class="visible-links" id="navigation-links">
+          <!-- 导航链接将通过JavaScript动态生成 -->
         </ul>
-        <ul class="hidden-links hidden">
+        <ul class="hidden-links hidden" id="mobile-navigation-links">
+          <!-- 移动端导航链接将通过JavaScript动态生成 -->
           <li class="language-switcher">
             <button id="lang-toggle" class="lang-toggle-btn" title="切换语言/Switch Language">
               <span class="lang-text-mobile" data-show-when="zh">English</span>
@@ -29,33 +27,122 @@
 </div>
 
 <script>
-// 动态调整导航链接的语言
-function updateNavigationLinks() {
-  const currentLang = getCurrentLanguage();
-  const navLinks = document.querySelectorAll('.nav-link');
-  
-  navLinks.forEach(link => {
-    const section = link.dataset.section;
-    if (section) {
-      // 根据当前语言调整链接
-      if (currentLang === 'en') {
-        // 英文版本：链接到英文页面的相应部分
-        link.href = `/en/about/#${section}`;
-      } else {
-        // 中文版本：链接到中文页面的相应部分
-        link.href = `/about/#${section}`;
-      }
-    }
-  });
+// 导航数据
+const navigationData = {
+  zh: [
+    { title: "主页", section: "about-me" },
+    { title: "教育经历", section: "educations" },
+    { title: "学术论文", section: "publications" },
+    { title: "项目经历", section: "projects" },
+    { title: "专利", section: "patents" },
+    { title: "学术服务", section: "services" },
+    { title: "获奖情况", section: "awards" }
+  ],
+  en: [
+    { title: "Homepage", section: "about-me" },
+    { title: "Education", section: "educations" },
+    { title: "Publications", section: "publications" },
+    { title: "Projects", section: "projects" },
+    { title: "Patents", section: "patents" },
+    { title: "Services", section: "services" },
+    { title: "Awards", section: "awards" }
+  ]
+};
+
+// 获取当前语言
+function getCurrentLanguage() {
+  const currentPath = window.location.pathname;
+  return (currentPath.includes('/en/')) ? 'en' : 'zh';
 }
 
-// 页面加载完成后更新导航链接
+// 生成导航链接
+function generateNavigationLinks() {
+  const currentLang = getCurrentLanguage();
+  const navData = navigationData[currentLang];
+  const navContainer = document.getElementById('navigation-links');
+  const mobileNavContainer = document.getElementById('mobile-navigation-links');
+  
+  if (!navContainer || !navData) return;
+  
+  // 清空现有链接
+  navContainer.innerHTML = '';
+  
+  // 生成桌面端导航链接
+  navData.forEach((item, index) => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    
+    // 设置链接属性
+    if (currentLang === 'en') {
+      a.href = `/en/about/#${item.section}`;
+    } else {
+      a.href = `/about/#${item.section}`;
+    }
+    
+    a.textContent = item.title;
+    a.className = 'nav-link';
+    a.dataset.section = item.section;
+    
+    // 第一个链接是主页，需要特殊样式
+    if (index === 0) {
+      li.className = 'masthead__menu-item masthead__menu-item--lg masthead__menu-home-item';
+    } else {
+      li.className = 'masthead__menu-item';
+    }
+    
+    li.appendChild(a);
+    navContainer.appendChild(li);
+  });
+
+  // 生成移动端导航链接
+  if (mobileNavContainer) {
+    // 保存语言切换器
+    const languageSwitcher = mobileNavContainer.querySelector('.language-switcher');
+    
+    // 清空移动端导航，但保留语言切换器
+    mobileNavContainer.innerHTML = '';
+    
+    // 重新添加导航链接
+    navData.forEach((item) => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      
+      // 设置链接属性
+      if (currentLang === 'en') {
+        a.href = `/en/about/#${item.section}`;
+      } else {
+        a.href = `/about/#${item.section}`;
+      }
+      
+      a.textContent = item.title;
+      a.className = 'nav-link-mobile';
+      a.dataset.section = item.section;
+      
+      li.appendChild(a);
+      mobileNavContainer.appendChild(li);
+    });
+    
+    // 重新添加语言切换器到最后
+    if (languageSwitcher) {
+      mobileNavContainer.appendChild(languageSwitcher);
+    }
+  }
+}
+
+// 更新导航链接
+function updateNavigationLinks() {
+  generateNavigationLinks();
+}
+
+// 页面加载完成后生成导航链接
 document.addEventListener('DOMContentLoaded', function() {
-  updateNavigationLinks();
+  setTimeout(() => {
+    generateNavigationLinks();
+  }, 100);
 });
 
 // 语言切换后更新导航链接
 document.addEventListener('languageChanged', function() {
-  updateNavigationLinks();
+  generateNavigationLinks();
 });
 </script>

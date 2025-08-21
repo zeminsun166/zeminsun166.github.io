@@ -1,3 +1,62 @@
+main_zh:
+  - title: "主页"
+    url: "#about-me"
+    section: "about-me"
+
+  - title: "教育经历"
+    url: "#educations"
+    section: "educations"
+
+  - title: "学术论文"
+    url: "#publications"
+    section: "publications"
+
+  - title: "项目经历"
+    url: "#projects"
+    section: "projects"
+
+  - title: "专利"
+    url: "#patents"
+    section: "patents"
+
+  - title: "学术服务"
+    url: "#services"
+    section: "services"
+
+  - title: "获奖情况"
+    url: "#awards"
+    section: "awards"
+
+main_en:
+  - title: "Homepage"
+    url: "#about-me"
+    section: "about-me"
+
+  - title: "Education"
+    url: "#educations"
+    section: "educations"
+
+  - title: "Publications"
+    url: "#publications"
+    section: "publications"
+
+  - title: "Projects"
+    url: "#projects"
+    section: "projects"
+
+  - title: "Patents"
+    url: "#patents"
+    section: "patents"
+
+  - title: "Services"
+    url: "#services"
+    section: "services"
+
+  - title: "Awards"
+    url: "#awards"
+    section: "awards"
+
+# 保持向后兼容性的默认配置
 main:
   - title: "About Me"
     url: "#about-me"
