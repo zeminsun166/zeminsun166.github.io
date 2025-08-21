@@ -81,9 +81,50 @@ function generateNavigationLinks() {
     // 添加点击事件处理锚点跳转
     a.addEventListener('click', function(e) {
       e.preventDefault();
-      const targetSection = document.getElementById(item.section);
+      
+      // 尝试多种方式查找目标元素
+      let targetSection = document.getElementById(item.section);
+      
+      // 如果直接查找失败，尝试其他方法
+      if (!targetSection) {
+        // 方法1：查找包含特定文本的标题元素
+        const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        for (let heading of headings) {
+          if (heading.textContent.includes(item.title) || heading.id === item.section) {
+            targetSection = heading;
+            break;
+          }
+        }
+        
+        // 方法2：查找所有可能的锚点
+        if (!targetSection) {
+          const allAnchors = document.querySelectorAll('[id]');
+          for (let anchor of allAnchors) {
+            if (anchor.id === item.section || anchor.id.includes(item.section)) {
+              targetSection = anchor;
+              break;
+            }
+          }
+        }
+      }
+      
+      console.log('Clicking on:', item.title, 'section:', item.section);
+      console.log('Target element found:', targetSection);
+      
       if (targetSection) {
+        // 确保元素可见
+        targetSection.style.scrollMarginTop = '100px'; // 为固定导航栏留出空间
         targetSection.scrollIntoView({ behavior: 'smooth' });
+        console.log('Scrolling to section:', item.section);
+      } else {
+        console.log('Section not found:', item.section);
+        // 尝试查找所有可能的锚点
+        const allAnchors = document.querySelectorAll('[id]');
+        console.log('All available anchors:', Array.from(allAnchors).map(el => el.id));
+        
+        // 如果还是找不到，尝试使用浏览器默认的锚点跳转
+        console.log('Falling back to default anchor behavior');
+        window.location.hash = item.section;
       }
     });
     
@@ -120,9 +161,50 @@ function generateNavigationLinks() {
       // 添加点击事件处理锚点跳转
       a.addEventListener('click', function(e) {
         e.preventDefault();
-        const targetSection = document.getElementById(item.section);
+        
+        // 尝试多种方式查找目标元素
+        let targetSection = document.getElementById(item.section);
+        
+        // 如果直接查找失败，尝试其他方法
+        if (!targetSection) {
+          // 方法1：查找包含特定文本的标题元素
+          const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+          for (let heading of headings) {
+            if (heading.textContent.includes(item.title) || heading.id === item.section) {
+              targetSection = heading;
+              break;
+            }
+          }
+          
+          // 方法2：查找所有可能的锚点
+          if (!targetSection) {
+            const allAnchors = document.querySelectorAll('[id]');
+            for (let anchor of allAnchors) {
+              if (anchor.id === item.section || anchor.id.includes(item.section)) {
+                targetSection = anchor;
+                break;
+              }
+            }
+          }
+        }
+        
+        console.log('Mobile: Clicking on:', item.title, 'section:', item.section);
+        console.log('Mobile: Target element found:', targetSection);
+        
         if (targetSection) {
+          // 确保元素可见
+          targetSection.style.scrollMarginTop = '100px'; // 为固定导航栏留出空间
           targetSection.scrollIntoView({ behavior: 'smooth' });
+          console.log('Mobile: Scrolling to section:', item.section);
+        } else {
+          console.log('Mobile: Section not found:', item.section);
+          // 尝试查找所有可能的锚点
+          const allAnchors = document.querySelectorAll('[id]');
+          console.log('Mobile: All available anchors:', Array.from(allAnchors).map(el => el.id));
+          
+          // 如果还是找不到，尝试使用浏览器默认的锚点跳转
+          console.log('Mobile: Falling back to default anchor behavior');
+          window.location.hash = item.section;
         }
       });
       
@@ -147,6 +229,13 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(() => {
     generateNavigationLinks();
   }, 100);
+});
+
+// 确保在页面完全加载后再次检查
+window.addEventListener('load', function() {
+  setTimeout(() => {
+    generateNavigationLinks();
+  }, 200);
 });
 
 // 语言切换后更新导航链接
