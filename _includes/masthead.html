@@ -6,7 +6,7 @@
         <ul class="visible-links" id="navigation-links">
           <!-- 导航链接将通过JavaScript动态生成 -->
         </ul>
-        <ul class="hidden-links hidden" id="mobile-navigation-links">
+        <ul class="hidden-links hidden">
           <!-- 移动端导航链接将通过JavaScript动态生成 -->
           <li class="language-switcher">
             <button id="lang-toggle" class="lang-toggle-btn" title="切换语言/Switch Language">
@@ -60,8 +60,6 @@ function generateNavigationLinks() {
   const currentLang = getCurrentLanguage();
   const navData = navigationData[currentLang];
   const navContainer = document.getElementById('navigation-links');
-  const mobileNavContainer = document.getElementById('mobile-navigation-links');
-  
   if (!navContainer || !navData) return;
   
   // 清空现有链接
@@ -170,6 +168,7 @@ function generateNavigationLinks() {
   });
 
   // 生成移动端导航链接
+  const mobileNavContainer = document.querySelector('.hidden-links');
   if (mobileNavContainer) {
     // 查找现有的导航链接，如果存在则更新，如果不存在则创建
     const existingNavItems = mobileNavContainer.querySelectorAll('li:not(.language-switcher)');
