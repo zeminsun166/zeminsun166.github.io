@@ -10,6 +10,9 @@
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden">
+          {% for link in site.data.navigation.main %}
+            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
           <li class="language-switcher">
             <button id="lang-toggle" class="lang-toggle-btn" title="切换语言/Switch Language">
               🌐
@@ -17,6 +20,12 @@
           </li>
         </ul>
       </nav>
+    </div>
+    <!-- 桌面端独立的语言切换器 -->
+    <div class="language-switcher language-switcher--desktop">
+      <button id="lang-toggle-desktop" class="lang-toggle-btn" title="切换语言/Switch Language">
+        🌐
+      </button>
     </div>
   </div>
 </div>

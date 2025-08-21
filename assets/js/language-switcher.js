@@ -2,23 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Wait a bit to ensure all elements are loaded
     setTimeout(function() {
-        const langToggle = document.getElementById('lang-toggle');
-        const langSwitcher = document.querySelector('.language-switcher');
-        
-        // Check if button exists
-        if (!langToggle) {
-            console.log('Language toggle button not found');
-            return;
-        }
-        
-        // Force display the button and its container
-        if (langSwitcher) {
-            langSwitcher.style.display = 'block';
-            langSwitcher.style.visibility = 'visible';
-        }
-        
-        langToggle.style.display = 'flex';
-        langToggle.style.visibility = 'visible';
+        const langToggleMobile = document.getElementById('lang-toggle');
+        const langToggleDesktop = document.getElementById('lang-toggle-desktop');
         
         // Determine current language from URL
         function getCurrentLanguage() {
@@ -40,17 +25,31 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
         
-        // Add click event listener
-        langToggle.addEventListener('click', switchLanguage);
-        
-        // Update button title based on current language
-        const currentLang = getCurrentLanguage();
-        if (currentLang === 'zh') {
-            langToggle.title = 'Switch to English';
-        } else {
-            langToggle.title = '切换到中文';
+        // Add click event listeners to both buttons
+        if (langToggleMobile) {
+            langToggleMobile.addEventListener('click', switchLanguage);
+            
+            // Update button title based on current language
+            const currentLang = getCurrentLanguage();
+            if (currentLang === 'zh') {
+                langToggleMobile.title = 'Switch to English';
+            } else {
+                langToggleMobile.title = '切换到中文';
+            }
         }
         
-        console.log('Language switcher initialized for:', currentLang);
+        if (langToggleDesktop) {
+            langToggleDesktop.addEventListener('click', switchLanguage);
+            
+            // Update button title based on current language
+            const currentLang = getCurrentLanguage();
+            if (currentLang === 'zh') {
+                langToggleDesktop.title = 'Switch to English';
+            } else {
+                langToggleDesktop.title = '切换到中文';
+            }
+        }
+        
+        console.log('Language switcher initialized for:', getCurrentLanguage());
     }, 100);
 }); 

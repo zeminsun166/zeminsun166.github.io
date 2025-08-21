@@ -1,12 +1,5 @@
 // Language switcher styles
 .language-switcher {
-  position: absolute !important;
-  top: 0.5rem !important;
-  right: 0.5rem !important;
-  z-index: 1000 !important;
-  display: block !important;
-  visibility: visible !important;
-  
   .lang-toggle-btn {
     background: transparent !important;
     border: 2px solid #667eea !important;
@@ -35,21 +28,31 @@
   }
 }
 
-// Responsive design - hide language switcher on mobile when navicon is visible
+// 桌面端语言切换器
+.language-switcher--desktop {
+  position: absolute !important;
+  top: 0.5rem !important;
+  right: 0.5rem !important;
+  z-index: 1000 !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+// 移动端响应式设计
 @media (max-width: 768px) {
-  .greedy-nav {
-    .language-switcher {
-      display: none !important;
-    }
+  // 隐藏桌面端语言切换器
+  .language-switcher--desktop {
+    display: none !important;
   }
   
-  // Show language switcher in hidden-links when navicon is active
-  .greedy-nav .hidden-links:not(.hidden) {
+  // 移动端隐藏菜单中的语言切换器样式
+  .greedy-nav .hidden-links {
     .language-switcher {
       display: block !important;
-      position: static !important;
-      margin: 0.5rem 0 !important;
+      margin: 10px 0 !important;
+      padding: 10px 20px !important;
       text-align: center !important;
+      border-bottom: 1px solid #e3e3e3 !important;
       
       .lang-toggle-btn {
         width: 40px !important;
@@ -58,6 +61,13 @@
         margin: 0 auto !important;
       }
     }
+  }
+}
+
+// 桌面端隐藏移动端语言切换器
+@media (min-width: 769px) {
+  .greedy-nav .hidden-links .language-switcher {
+    display: none !important;
   }
 }
 
