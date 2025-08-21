@@ -1,21 +1,35 @@
 main:
   - title: "About Me"
     url: "#about-me"
+    url_en: "#about-me"
+    url_zh: "#about-me"
 
   - title: "Educations"
     url: "#educations"
+    url_en: "#educations"
+    url_zh: "#educations"
 
   - title: "Publications"
     url: "#publications"
+    url_en: "#publications"
+    url_zh: "#publications"
 
   - title: "Projects"
     url: "#projects"
+    url_en: "#projects"
+    url_zh: "#projects"
 
   - title: "Patents"
     url: "#patents"
+    url_en: "#patents"
+    url_zh: "#patents"
 
   - title: "Services"
     url: "#services"
+    url_en: "#services"
+    url_zh: "#services"
 
   - title: "Awards"
     url: "#awards"
+    url_en: "#awards"
+    url_zh: "#awards"

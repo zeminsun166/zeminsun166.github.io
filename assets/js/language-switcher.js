@@ -56,6 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Switch to Chinese
                 window.location.href = '/';
             }
+            
+            // Trigger navigation link update event
+            document.dispatchEvent(new Event('languageChanged'));
         }
         
         // Add click event listeners to both buttons

@@ -4,9 +4,9 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me">Homepage</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item"><a href="#about-me" class="nav-link" data-section="about-me">Homepage</a></li>
           {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ link.url }}" class="nav-link" data-section="{{ link.url | replace: '#', '' }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden">
@@ -27,3 +27,35 @@
     </div>
   </div>
 </div>
+
+<script>
+// 动态调整导航链接的语言
+function updateNavigationLinks() {
+  const currentLang = getCurrentLanguage();
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  navLinks.forEach(link => {
+    const section = link.dataset.section;
+    if (section) {
+      // 根据当前语言调整链接
+      if (currentLang === 'en') {
+        // 英文版本：链接到英文页面的相应部分
+        link.href = `/en/about/#${section}`;
+      } else {
+        // 中文版本：链接到中文页面的相应部分
+        link.href = `/about/#${section}`;
+      }
+    }
+  });
+}
+
+// 页面加载完成后更新导航链接
+document.addEventListener('DOMContentLoaded', function() {
+  updateNavigationLinks();
+});
+
+// 语言切换后更新导航链接
+document.addEventListener('languageChanged', function() {
+  updateNavigationLinks();
+});
+</script>
