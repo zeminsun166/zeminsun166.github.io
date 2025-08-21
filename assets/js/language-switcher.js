@@ -16,12 +16,19 @@ document.addEventListener('DOMContentLoaded', function() {
             const currentLang = getCurrentLanguage();
             const mobileTexts = document.querySelectorAll('.lang-text-mobile');
             
+            console.log('Found mobile texts:', mobileTexts.length);
+            console.log('Current language:', currentLang);
+            
             mobileTexts.forEach(text => {
                 const showWhen = text.getAttribute('data-show-when');
+                console.log('Text element:', text.textContent, 'showWhen:', showWhen);
+                
                 if (showWhen === currentLang) {
                     text.style.display = 'inline';
+                    console.log('Showing text:', text.textContent);
                 } else {
                     text.style.display = 'none';
+                    console.log('Hiding text:', text.textContent);
                 }
             });
         }
