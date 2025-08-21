@@ -1,9 +1,7 @@
 // Language switcher styles
 .language-switcher {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  padding: 0.5rem;
+  float: right;
+  margin: 0.5rem 0;
   
   .lang-toggle-btn {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
