@@ -35,6 +35,32 @@
   }
 }
 
+// Responsive design - hide language switcher on mobile when navicon is visible
+@media (max-width: 768px) {
+  .greedy-nav {
+    .language-switcher {
+      display: none !important;
+    }
+  }
+  
+  // Show language switcher in hidden-links when navicon is active
+  .greedy-nav .hidden-links:not(.hidden) {
+    .language-switcher {
+      display: block !important;
+      position: static !important;
+      margin: 0.5rem 0 !important;
+      text-align: center !important;
+      
+      .lang-toggle-btn {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 1.3rem !important;
+        margin: 0 auto !important;
+      }
+    }
+  }
+}
+
 // Responsive design
 @media (max-width: 768px) {
   .language-switcher {
