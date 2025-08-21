@@ -72,8 +72,15 @@ function generateNavigationLinks() {
     const li = document.createElement('li');
     const a = document.createElement('a');
     
-    // 设置链接属性 - 使用相对锚点链接，这样可以在当前页面内跳转
-    a.href = `#${item.section}`;
+    // 设置链接属性 - 根据当前语言设置正确的链接
+    if (currentLang === 'en') {
+      // 英文版本：链接到英文页面的相应部分
+      a.href = `/en/about/#${item.section}`;
+    } else {
+      // 中文版本：链接到中文页面的相应部分
+      a.href = `/about/#${item.section}`;
+    }
+    
     a.textContent = item.title;
     a.className = 'nav-link';
     a.dataset.section = item.section;
@@ -102,8 +109,15 @@ function generateNavigationLinks() {
       const li = document.createElement('li');
       const a = document.createElement('a');
       
-      // 设置链接属性 - 使用相对锚点链接
-      a.href = `#${item.section}`;
+      // 设置链接属性 - 根据当前语言设置正确的链接
+      if (currentLang === 'en') {
+        // 英文版本：链接到英文页面的相应部分
+        a.href = `/en/about/#${item.section}`;
+      } else {
+        // 中文版本：链接到中文页面的相应部分
+        a.href = `/about/#${item.section}`;
+      }
+      
       a.textContent = item.title;
       a.className = 'nav-link-mobile';
       a.dataset.section = item.section;
