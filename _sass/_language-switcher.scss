@@ -14,7 +14,9 @@
     padding: 0.4rem 0.8rem;
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    line-height: 1;
+    line-height: 1.2;
+    min-width: 60px;
+    min-height: 28px;
     
     &:hover {
       transform: translateY(-1px);
@@ -26,7 +28,7 @@
     }
     
     .lang-text {
-      display: inline-block;
+      display: none;
       transition: opacity 0.3s ease;
       
       &[data-show-when="zh"] {
