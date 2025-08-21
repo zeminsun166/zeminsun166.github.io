@@ -66,23 +66,34 @@
           .language-switcher {
         display: block !important;
         background: #fff !important;
-        border: 1px solid #e3e3e3 !important;
-        border-radius: 4px !important;
-        margin: 2px 0 !important;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+        border: none !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        box-shadow: none !important;
         transition: all 0.2s ease !important;
         
-        &:hover {
-          border-color: #667eea !important;
-          box-shadow: 0 2px 6px rgba(102, 126, 234, 0.15) !important;
+        // 确保li元素有白色背景
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: #fff;
+          z-index: -1;
         }
+        
+        // 强制设置li元素的背景和边框
+        background: #fff !important;
+        border-bottom: 1px solid #e3e3e3 !important;
       
               .lang-toggle-btn {
           display: block !important;
           width: 100% !important;
           margin: 0 !important;
           padding: 10px 20px !important;
-          background: #fff !important;
+          background: transparent !important;
           border: none !important;
           color: #7a8288 !important;
           font-size: 1em !important;
@@ -92,13 +103,13 @@
           cursor: pointer !important;
           border-bottom: none !important;
           transition: all 0.2s ease !important;
+          position: relative !important;
           
           &:hover {
             color: #494e52 !important;
             background: mix(#fff, #667eea, 75%) !important;
             transform: none !important;
             border-radius: 0 !important;
-            box-shadow: inset 0 0 0 1px rgba(102, 126, 234, 0.2) !important;
           }
           
           &:active {
@@ -156,6 +167,36 @@
       }
     }
   }
+}
+
+// 强制设置语言切换器li元素的样式
+.greedy-nav .hidden-links li.language-switcher {
+  background: #fff !important;
+  border-bottom: 1px solid #e3e3e3 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  
+  // 确保背景完全覆盖
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff !important;
+    z-index: -1;
+  }
+}
+
+// 额外的强制背景规则
+.greedy-nav .hidden-links .language-switcher {
+  background-color: #fff !important;
+  background-image: none !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: auto !important;
 }
 
 // 桌面端隐藏移动端语言切换器
