@@ -72,4 +72,27 @@
 {% if site.baidu_site_verification %}
   <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}" />
 {% endif %}
+
+<!-- Additional SEO Meta Tags -->
+{% if site.lang %}
+  <meta property="og:locale" content="{{ site.lang }}">
+  <meta name="language" content="{{ site.lang }}">
+{% endif %}
+
+{% if site.timezone %}
+  <meta name="timezone" content="{{ site.timezone }}">
+{% endif %}
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.title | default: site.title }}">
+<meta property="og:description" content="{{ seo_description }}">
+<meta property="og:url" content="{{ canonical_url }}">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ page.title | default: site.title }}">
+<meta name="twitter:description" content="{{ seo_description }}">
+
 <!-- end SEO -->

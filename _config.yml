@@ -8,6 +8,8 @@
 # Site Settings
 title                    : "Zemin Sun"
 description              : "吉林大学"
+url                      : "https://zeminsun166.github.io"
+baseurl                  : ""
 repository               : "zeminsun166/zeminsun166.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -16,8 +18,13 @@ google_analytics_id      :  G-2TR4YL8QPE # get google_analytics_id from https://
 
 # SEO Related
 google_site_verification :  GCu61KyEMl1MBLjBgPTykDli2rPsv8UnMQK4GfGjTkQ # get google_site_verification from https://search.google.com/search-console/about
-bing_site_verification   :  0A5ABF80DE5DB07A0EFEEAE49387F99F # get bing_site_verification from https://www.bing.com/webmasters/about
-baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
+bing_site_verification   :  0A5ABF80DE5DB07A0EFEEAE49387F99F # get from https://www.bing.com/webmasters/about
+baidu_site_verification  :  # get from https://ziyuan.baidu.com/login/index?u=/site/index
+
+# SEO Settings
+lang                     : "zh-CN"
+default_lang             : "zh"
+timezone                 : "Asia/Shanghai"
 
 # Site Author
 author:
