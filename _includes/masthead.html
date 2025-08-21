@@ -72,18 +72,20 @@ function generateNavigationLinks() {
     const li = document.createElement('li');
     const a = document.createElement('a');
     
-    // 设置链接属性 - 根据当前语言设置正确的链接
-    if (currentLang === 'en') {
-      // 英文版本：链接到英文页面的相应部分
-      a.href = `/en/about/#${item.section}`;
-    } else {
-      // 中文版本：链接到中文页面的相应部分
-      a.href = `/about/#${item.section}`;
-    }
-    
+    // 设置链接属性 - 使用相对锚点链接
+    a.href = `#${item.section}`;
     a.textContent = item.title;
     a.className = 'nav-link';
     a.dataset.section = item.section;
+    
+    // 添加点击事件处理锚点跳转
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetSection = document.getElementById(item.section);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
     
     // 第一个链接是主页，需要特殊样式
     if (index === 0) {
@@ -109,18 +111,20 @@ function generateNavigationLinks() {
       const li = document.createElement('li');
       const a = document.createElement('a');
       
-      // 设置链接属性 - 根据当前语言设置正确的链接
-      if (currentLang === 'en') {
-        // 英文版本：链接到英文页面的相应部分
-        a.href = `/en/about/#${item.section}`;
-      } else {
-        // 中文版本：链接到中文页面的相应部分
-        a.href = `/about/#${item.section}`;
-      }
-      
+      // 设置链接属性 - 使用相对锚点链接
+      a.href = `#${item.section}`;
       a.textContent = item.title;
       a.className = 'nav-link-mobile';
       a.dataset.section = item.section;
+      
+      // 添加点击事件处理锚点跳转
+      a.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetSection = document.getElementById(item.section);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
       
       li.appendChild(a);
       mobileNavContainer.appendChild(li);
