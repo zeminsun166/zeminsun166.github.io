@@ -11,6 +11,21 @@ document.addEventListener('DOMContentLoaded', function() {
             return (currentPath.includes('/en/')) ? 'en' : 'zh';
         }
         
+        // Update mobile button text display
+        function updateMobileButtonDisplay() {
+            const currentLang = getCurrentLanguage();
+            const mobileTexts = document.querySelectorAll('.lang-text-mobile');
+            
+            mobileTexts.forEach(text => {
+                const showWhen = text.getAttribute('data-show-when');
+                if (showWhen === currentLang) {
+                    text.style.display = 'inline';
+                } else {
+                    text.style.display = 'none';
+                }
+            });
+        }
+        
         // Redirect to appropriate page
         function switchLanguage() {
             const currentPath = window.location.pathname;
@@ -29,13 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (langToggleMobile) {
             langToggleMobile.addEventListener('click', switchLanguage);
             
-            // Update button title based on current language
-            const currentLang = getCurrentLanguage();
-            if (currentLang === 'zh') {
-                langToggleMobile.title = 'Switch to English';
-            } else {
-                langToggleMobile.title = '切换到中文';
-            }
+            // Update mobile button text display
+            updateMobileButtonDisplay();
         }
         
         if (langToggleDesktop) {
