@@ -72,13 +72,8 @@ function generateNavigationLinks() {
     const li = document.createElement('li');
     const a = document.createElement('a');
     
-    // 设置链接属性
-    if (currentLang === 'en') {
-      a.href = `/en/about/#${item.section}`;
-    } else {
-      a.href = `/about/#${item.section}`;
-    }
-    
+    // 设置链接属性 - 使用相对锚点链接，这样可以在当前页面内跳转
+    a.href = `#${item.section}`;
     a.textContent = item.title;
     a.className = 'nav-link';
     a.dataset.section = item.section;
@@ -107,13 +102,8 @@ function generateNavigationLinks() {
       const li = document.createElement('li');
       const a = document.createElement('a');
       
-      // 设置链接属性
-      if (currentLang === 'en') {
-        a.href = `/en/about/#${item.section}`;
-      } else {
-        a.href = `/about/#${item.section}`;
-      }
-      
+      // 设置链接属性 - 使用相对锚点链接
+      a.href = `#${item.section}`;
       a.textContent = item.title;
       a.className = 'nav-link-mobile';
       a.dataset.section = item.section;

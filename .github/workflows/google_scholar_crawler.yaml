@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
     - name: Install Reqs
       run: |
         sudo apt-get install python3-setuptools
@@ -21,19 +19,13 @@ jobs:
         pip3 install -r requirements.txt
         python3 main.py
         if [ -d "./results" ]; then
-          # Copy results to main branch google-scholar-stats directory
-          mkdir -p ../google-scholar-stats
-          cp ./results/*.json ../google-scholar-stats/
-          
-          # Configure git for main branch
-          cd ..
+          cd ./results
+          git init
           git config --local user.name "${GITHUB_ACTOR}"
-          git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          
-          # Add and commit changes to main branch
-          git add google-scholar-stats/*.json
-          git commit -m "Update Google Scholar citation data [skip ci]"
-          git push origin HEAD:main
+          export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git add *.json
+          git commit -m "Updated Citation Data"
+          git push "${remote_repo}" HEAD:google-scholar-stats --force
         else
           echo "results directory does not exist, skipping commit and push"
         fi

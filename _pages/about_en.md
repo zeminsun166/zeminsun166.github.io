@@ -91,3 +91,10 @@ In the past 5 years, as **first author or corresponding author**, he has publish
   - IEEE Transactions on Mobile Computing
   - IEEE Transactions on Communications
   - IEEE Transactions on Wireless Communications 
+
+# Awards and Honors {#awards}
+- ACM China Outstanding Doctoral Dissertation Award
+- China Electronics Society IoT Expert Committee Outstanding Journal Paper Award
+- Jilin University First-Class Graduate Student Excellence Scholarship
+- National Scholarship for Master's Students
+- Best Paper Award at IEEE IWCMC 2025 
