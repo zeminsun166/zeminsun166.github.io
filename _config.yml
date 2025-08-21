@@ -9,7 +9,7 @@
 title                    : "Zemin Sun"
 description              : "吉林大学"
 repository               : "zeminsun166/zeminsun166.github.io"
-google_scholar_stats_use_cdn : true
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      :  G-2TR4YL8QPE # get google_analytics_id from https://analytics.google.com/analytics/
