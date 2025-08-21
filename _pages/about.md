@@ -19,7 +19,7 @@ redirect_from:
 
 **孙泽敏**，博士，吉林大学计算机科学与技术学院助理研究员，入选吉林大学“鼎新学者”支持计划。2019年9月受国家留学基金委资助赴加拿大滑铁卢大学（University of Waterloo）公派留学， 2022年7月获吉林大学计算机应用技术专业博士学位，2018年获吉林大学计算机应用技术专业硕士学位， 2015年获吉林大学软件学院学士学位。曾获ACM中国优秀博士学位论文奖、中国电子学会物联网专家委员会优秀期刊论文、吉林大学一等研究生优秀奖学金和硕士研究生国家奖学金等奖励和荣誉称号。
 
-近5年，以**第一作者或通信作者身份**在IEEE TMC、IEEE TVT、IEEE COMST、IEEE INFOCOM和IEEE ICC等高水平期刊和国际会议上发表相关学术论文10余篇 <a href='https://scholar.google.com/citations?user=TJtQW8gAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>)；申请发明专利 6 项，已获授权 3 项；主持中国博士后科学基金面上项目1项和博士后国（境）外学术交流项目1项目，并以主要参与人身份参加国家自然科学基金面上项目3项、国家自然科学基金国际(地区)合作与交流项目1项和吉林省科技发展计划项目3项。
+近5年，以**第一作者或通信作者身份**在IEEE TMC、IEEE TVT、IEEE COMST、IEEE INFOCOM和IEEE ICC等高水平期刊和国际会议上发表相关学术论文10余篇 <a href='https://scholar.google.com/citations?user=TJtQW8gAAAAJ'><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzeminsun166%2Fzeminsun166.github.io%2Fgoogle-scholar-stats%2Fgs_data_shieldsio.json&logo=google-scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations&cacheSeconds=3600" alt="citations"></a>)；申请发明专利 6 项，已获授权 3 项；主持中国博士后科学基金面上项目1项和博士后国（境）外学术交流项目1项目，并以主要参与人身份参加国家自然科学基金面上项目3项、国家自然科学基金国际(地区)合作与交流项目1项和吉林省科技发展计划项目3项。
 
 # 研究方向 
 - 移动边缘计算
