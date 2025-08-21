@@ -20,17 +20,13 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update display
         updateLanguageDisplay(currentLang);
         
-        // Debug info
-        console.log('Language switched to:', currentLang);
-        console.log('Current path:', window.location.pathname);
-        
         // Redirect to appropriate page
         redirectToLanguagePage(currentLang);
     });
     
     function updateLanguageDisplay(lang) {
         langTexts.forEach(text => {
-            if (text.dataset.lang === lang) {
+            if (text.dataset.showWhen === lang) {
                 text.style.display = 'inline';
             } else {
                 text.style.display = 'none';
@@ -41,19 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function redirectToLanguagePage(lang) {
         const currentPath = window.location.pathname;
         
-        console.log('Redirecting to language:', lang);
-        console.log('From path:', currentPath);
-        
         if (lang === 'en') {
             // Redirect to English page
             if (currentPath === '/' || currentPath === '/about/' || currentPath === '/about.html') {
-                console.log('Redirecting to English page: /en/about/');
                 window.location.href = '/en/about/';
             }
         } else {
             // Redirect to Chinese page
             if (currentPath === '/en/about/' || currentPath === '/en/') {
-                console.log('Redirecting to Chinese page: /');
                 window.location.href = '/';
             }
         }
