@@ -24,9 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log('Text element:', text.textContent, 'showWhen:', showWhen);
                 
                 if (showWhen === currentLang) {
+                    text.classList.add('show');
                     text.style.display = 'inline';
+                    text.style.color = '#7a8288';
+                    text.style.fontSize = '1em';
                     console.log('Showing text:', text.textContent);
                 } else {
+                    text.classList.remove('show');
                     text.style.display = 'none';
                     console.log('Hiding text:', text.textContent);
                 }

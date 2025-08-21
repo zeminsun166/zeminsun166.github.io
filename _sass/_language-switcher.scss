@@ -73,6 +73,15 @@
         
         .lang-text-mobile {
           display: none;
+          color: inherit;
+          font-size: inherit;
+          font-weight: inherit;
+          
+          &.show {
+            display: inline !important;
+            color: #7a8288 !important;
+            font-size: 1em !important;
+          }
         }
       }
     }
