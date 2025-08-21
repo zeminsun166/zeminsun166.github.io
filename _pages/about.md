@@ -3,7 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
-layout: default
+layout: page_zh
 redirect_from: 
   - /about/
   - /about.html

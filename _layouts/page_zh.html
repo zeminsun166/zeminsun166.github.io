@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>孙泽敏 - 学术档案</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/images/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/images/favicon-16x16.png' | relative_url }}">
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    {% include masthead.html %}
+
+    <div id="main" role="main">
+      <!-- Sidebar -->
+      {% include sidebar.html %}
+    
+      <!-- Main Content -->
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            {{ content }}
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/language-switcher.js' | relative_url }}"></script>
+    
+    <!-- Analytics -->
+    {% include analytics.html %}
+    {% include fetch_google_scholar_stats.html %}
+  </body>
+</html> 

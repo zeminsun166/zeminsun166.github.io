@@ -3,7 +3,7 @@ permalink: /en/about/
 title: ""
 excerpt: ""
 author_profile: true
-layout: default
+layout: page_en
 redirect_from: 
   - /about/en/
   - /about_en.html
