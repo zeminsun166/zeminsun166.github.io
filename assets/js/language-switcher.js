@@ -40,11 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (lang === 'en') {
             // Redirect to English page
             if (currentPath === '/' || currentPath === '/about/' || currentPath === '/about.html') {
-                window.location.href = '/en/';
+                window.location.href = '/en/about/';
             }
         } else {
             // Redirect to Chinese page
-            if (currentPath === '/en/') {
+            if (currentPath === '/en/about/') {
                 window.location.href = '/';
             }
         }
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check current page and update language display accordingly
     function checkCurrentPageLanguage() {
         const currentPath = window.location.pathname;
-        if (currentPath === '/en/') {
+        if (currentPath === '/en/about/') {
             currentLang = 'en';
             updateLanguageDisplay(currentLang);
         } else {
