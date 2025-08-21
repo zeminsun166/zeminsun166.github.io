@@ -1,0 +1,19 @@
+{
+  "name": "Zemin Sun",
+  "citedby": 1250,
+  "publications": {
+    "TJtQW8gAAAAJ:QIV2ME_5wuYC": {
+      "num_citations": 45,
+      "title": "TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing"
+    },
+    "TJtQW8gAAAAJ:aqlVkmm33-oC": {
+      "num_citations": 38,
+      "title": "BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks"
+    },
+    "TJtQW8gAAAAJ:7PzlFSSx8tAC": {
+      "num_citations": 32,
+      "title": "A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC"
+    }
+  },
+  "updated": "2024-12-19 10:00:00"
+} 
