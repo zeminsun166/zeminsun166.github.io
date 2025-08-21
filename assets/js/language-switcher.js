@@ -21,6 +21,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         console.log('Current page language:', currentLang, 'Path:', currentPath);
         updateLanguageDisplay(currentLang);
+        
+        // Ensure button is visible
+        const langToggle = document.getElementById('lang-toggle');
+        if (langToggle) {
+            langToggle.style.display = 'block';
+        }
     }
     
     function updateLanguageDisplay(lang) {
@@ -34,6 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 text.style.display = 'none';
             }
         });
+        
+        // Ensure the button itself is always visible
+        const langToggle = document.getElementById('lang-toggle');
+        if (langToggle) {
+            langToggle.style.display = 'block';
+            langToggle.style.visibility = 'visible';
+        }
     }
     
     function redirectToLanguagePage(lang) {

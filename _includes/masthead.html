@@ -9,14 +9,14 @@
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
+        <div class="language-switcher">
+          <button id="lang-toggle" class="lang-toggle-btn">
+            <span class="lang-text" data-show-when="zh">English</span>
+            <span class="lang-text" data-show-when="en">中文</span>
+          </button>
+        </div>
         <ul class="hidden-links hidden"></ul>
       </nav>
-    </div>
-    <div class="language-switcher">
-      <button id="lang-toggle" class="lang-toggle-btn">
-        <span class="lang-text" data-show-when="zh">English</span>
-        <span class="lang-text" data-show-when="en">中文</span>
-      </button>
     </div>
   </div>
 </div>
