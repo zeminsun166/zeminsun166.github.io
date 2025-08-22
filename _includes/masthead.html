@@ -5,13 +5,13 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links" id="navigation-links">
           <!-- 静态导航项，让插件能够正常工作 -->
-          <li><a href="#about-me">主页</a></li>
-          <li><a href="#educations">教育经历</a></li>
-          <li><a href="#publications">学术论文</a></li>
-          <li><a href="#projects">项目经历</a></li>
-          <li><a href="#patents">专利</a></li>
-          <li><a href="#services">学术服务</a></li>
-          <li><a href="#awards">获奖情况</a></li>
+          <li><a href="#about-me" data-section="about-me">主页</a></li>
+          <li><a href="#educations" data-section="educations">教育经历</a></li>
+          <li><a href="#publications" data-section="publications">学术论文</a></li>
+          <li><a href="#projects" data-section="projects">项目经历</a></li>
+          <li><a href="#patents" data-section="patents">专利</a></li>
+          <li><a href="#services" data-section="services">学术服务</a></li>
+          <li><a href="#awards" data-section="awards">获奖情况</a></li>
         </ul>
         <ul class="hidden-links">
           <!-- 移动端导航链接将通过JavaScript动态生成 -->
@@ -78,13 +78,14 @@ function generateNavigationLinks() {
       const item = navData[index];
       const a = li.querySelector('a');
       if (a) {
+        // 更新链接属性和文本内容
         a.href = `#${item.section}`;
-        a.textContent = item.title;
+        a.textContent = item.title; // 确保文本内容被更新
         a.dataset.section = item.section;
         
-        // 移除旧的点击事件监听器
-        a.replaceWith(a.cloneNode(true));
-        const newA = li.querySelector('a');
+        // 移除旧的点击事件监听器并重新添加
+        const newA = a.cloneNode(true);
+        li.replaceChild(newA, a);
         
         // 添加新的点击事件处理锚点跳转
         newA.addEventListener('click', function(e) {
