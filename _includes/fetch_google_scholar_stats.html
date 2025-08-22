@@ -19,7 +19,8 @@
                 var paperId = element.getAttribute('data');
                 if (data['publications'] && data['publications'][paperId]) {
                     var numCitations = data['publications'][paperId]['num_citations'];
-                    element.innerHTML = '| Citations: ' + numCitations;
+                    // 使用Google Scholar图标显示引用数，每篇论文显示对应的引用数
+                    element.innerHTML = ' <a href="https://scholar.google.com/citations?user=TJtQW8gAAAAJ" title="Google Scholar Citations"><img src="https://img.shields.io/badge/citations-' + numCitations + '-9cf?logo=google-scholar&labelColor=f6f6f6&style=flat" alt="citations: ' + numCitations + '"></a>';
                 }
             });
         }).fail(function(jqXHR, textStatus, errorThrown) {
