@@ -63,7 +63,14 @@
   
   // 移动端隐藏菜单中的语言切换器样式
   .greedy-nav .hidden-links {
-          .language-switcher {
+    // 确保移动端折叠框在不需要时正确隐藏
+    &.hidden {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+    }
+    
+    .language-switcher {
         display: block !important;
         background: #fff !important;
         border: none !important;
@@ -88,7 +95,7 @@
         background: #fff !important;
         border-bottom: 1px solid #e3e3e3 !important;
       
-              .lang-toggle-btn {
+        .lang-toggle-btn {
           display: block !important;
           width: 100% !important;
           margin: 0 !important;

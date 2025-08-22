@@ -76,6 +76,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Wait for menu to expand/collapse, then update text
                 setTimeout(() => {
                     updateMobileButtonDisplay();
+                    
+                    // 移动端：确保折叠框状态正确
+                    if (window.innerWidth <= 768) {
+                        const hiddenLinks = document.querySelector('.greedy-nav .hidden-links');
+                        if (hiddenLinks) {
+                            const hasHiddenItems = hiddenLinks.children.length > 0;
+                            if (!hasHiddenItems) {
+                                hiddenLinks.classList.add('hidden');
+                            }
+                        }
+                    }
                 }, 100);
             });
         }

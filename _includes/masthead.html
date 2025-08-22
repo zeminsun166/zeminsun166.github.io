@@ -197,6 +197,14 @@ function generateNavigationLinks() {
           mobileNavContainer.appendChild(languageSwitcher);
         }
       }
+      
+      // 移动端特殊处理：确保折叠框状态正确
+      if (window.innerWidth <= 768) {
+        const hasHiddenItems = mobileNavContainer.children.length > 0;
+        if (!hasHiddenItems) {
+          mobileNavContainer.classList.add('hidden');
+        }
+      }
     }
   }
 }
@@ -225,6 +233,15 @@ document.addEventListener('visibilitychange', function() {
   if (!document.hidden) {
     setTimeout(() => {
       generateNavigationLinks();
+    }, 100);
+  }
+});
+
+// 监听窗口大小变化，确保移动端导航状态正确
+window.addEventListener('resize', function() {
+  if (typeof updateNav === 'function') {
+    setTimeout(() => {
+      updateNav();
     }, 100);
   }
 });
