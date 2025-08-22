@@ -6,14 +6,24 @@
         var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
         {% endif %}
         $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
-            var citationEles = document.getElementsByClassName('show_paper_citations')
+            // 检查总引用数元素是否存在
+            var totalCitElement = document.getElementById('total_cit');
+            if (totalCitElement) {
+                var totalCitation = data['citedby'];
+                totalCitElement.innerHTML = totalCitation;
+            }
+            
+            // 更新论文引用数
+            var citationEles = document.getElementsByClassName('show_paper_citations');
             Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+                var paperId = element.getAttribute('data');
+                if (data['publications'] && data['publications'][paperId]) {
+                    var numCitations = data['publications'][paperId]['num_citations'];
+                    element.innerHTML = '| Citations: ' + numCitations;
+                }
             });
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            console.log('Failed to fetch Google Scholar data:', textStatus, errorThrown);
         });
     })
 </script>
