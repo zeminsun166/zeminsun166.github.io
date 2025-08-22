@@ -170,15 +170,28 @@ function generateNavigationLinks() {
   // 生成移动端导航链接
   const mobileNavContainer = document.querySelector('.hidden-links');
   if (mobileNavContainer) {
+    console.log('=== Mobile Navigation Generation Debug ===');
+    console.log('Before cleanup - Total items:', mobileNavContainer.children.length);
+    console.log('Before cleanup - Navigation items:', mobileNavContainer.querySelectorAll('li:not(.language-switcher)').length);
+    
     // 首先清理所有现有的导航链接（保留语言切换器）
     const languageSwitcher = mobileNavContainer.querySelector('.language-switcher');
     const allNavItems = mobileNavContainer.querySelectorAll('li:not(.language-switcher)');
     
+    console.log('Found language switcher:', !!languageSwitcher);
+    console.log('Found navigation items to remove:', allNavItems.length);
+    
     // 移除所有旧的导航项
-    allNavItems.forEach(item => item.remove());
+    allNavItems.forEach((item, index) => {
+      console.log(`Removing item ${index}:`, item.textContent.trim());
+      item.remove();
+    });
+    
+    console.log('After cleanup - Total items:', mobileNavContainer.children.length);
+    console.log('After cleanup - Navigation items:', mobileNavContainer.querySelectorAll('li:not(.language-switcher)').length);
     
     // 重新创建导航项
-    navData.forEach((item) => {
+    navData.forEach((item, index) => {
       const li = document.createElement('li');
       const a = document.createElement('a');
       
@@ -270,12 +283,19 @@ function generateNavigationLinks() {
       
       li.appendChild(a);
       mobileNavContainer.appendChild(li);
+      console.log(`Added item ${index}:`, item.title);
     });
     
     // 确保语言切换器在最后
     if (languageSwitcher) {
       mobileNavContainer.appendChild(languageSwitcher);
+      console.log('Added language switcher at the end');
     }
+    
+    console.log('After creation - Total items:', mobileNavContainer.children.length);
+    console.log('After creation - Navigation items:', mobileNavContainer.querySelectorAll('li:not(.language-switcher)').length);
+    console.log('Final navigation order:', Array.from(mobileNavContainer.querySelectorAll('li:not(.language-switcher)')).map(li => li.textContent.trim()));
+    console.log('=== Mobile Navigation Generation End ===');
     
     // 重新触发greedy navigation插件的更新
     if (typeof updateNav === 'function') {
@@ -289,6 +309,22 @@ function generateNavigationLinks() {
       }
       // 触发窗口resize事件，确保greedy navigation插件重新计算
       window.dispatchEvent(new Event('resize'));
+      
+      // 再次检查是否有重复项
+      setTimeout(() => {
+        const finalNavItems = mobileNavContainer.querySelectorAll('li:not(.language-switcher)');
+        console.log('Final check - Navigation items:', finalNavItems.length);
+        console.log('Final check - Navigation order:', Array.from(finalNavItems).map(li => li.textContent.trim()));
+        
+        // 检查是否有重复
+        const titles = Array.from(finalNavItems).map(li => li.textContent.trim());
+        const uniqueTitles = [...new Set(titles)];
+        if (titles.length !== uniqueTitles.length) {
+          console.warn('WARNING: Duplicate navigation items detected!');
+          console.warn('Original titles:', titles);
+          console.warn('Unique titles:', uniqueTitles);
+        }
+      }, 100);
     }, 50);
   }
 }
