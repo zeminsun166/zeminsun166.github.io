@@ -23,14 +23,21 @@ function isMobile() {
 function updateNav() {
   // 移动端特殊处理
   if (isMobile()) {
-    // 移动端始终显示按钮，但根据内容决定是否显示折叠框
+    // 移动端始终显示按钮
     if (!$btn.hasClass('hidden')) {
       $btn.removeClass('hidden');
     }
     
-    // 检查是否需要显示折叠框
-    var hasHiddenItems = $hlinks.children().length > 0;
-    if (hasHiddenItems) {
+    // 移动端：检查是否有真正的导航项（不是语言切换器）
+    var hasRealNavItems = false;
+    $hlinks.children().each(function() {
+      if (!$(this).hasClass('language-switcher')) {
+        hasRealNavItems = true;
+        return false; // 跳出循环
+      }
+    });
+    
+    if (hasRealNavItems) {
       $hlinks.removeClass('hidden');
     } else {
       $hlinks.addClass('hidden');

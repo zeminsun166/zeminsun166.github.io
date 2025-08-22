@@ -200,8 +200,15 @@ function generateNavigationLinks() {
       
       // 移动端特殊处理：确保折叠框状态正确
       if (window.innerWidth <= 768) {
-        const hasHiddenItems = mobileNavContainer.children.length > 0;
-        if (!hasHiddenItems) {
+        // 检查是否有真正的导航项（不是语言切换器）
+        let hasRealNavItems = false;
+        mobileNavContainer.querySelectorAll('li').forEach(li => {
+          if (!li.classList.contains('language-switcher')) {
+            hasRealNavItems = true;
+          }
+        });
+        
+        if (!hasRealNavItems) {
           mobileNavContainer.classList.add('hidden');
         }
       }

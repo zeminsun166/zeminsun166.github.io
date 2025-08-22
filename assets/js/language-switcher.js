@@ -81,8 +81,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (window.innerWidth <= 768) {
                         const hiddenLinks = document.querySelector('.greedy-nav .hidden-links');
                         if (hiddenLinks) {
-                            const hasHiddenItems = hiddenLinks.children.length > 0;
-                            if (!hasHiddenItems) {
+                            // 检查是否有真正的导航项（不是语言切换器）
+                            let hasRealNavItems = false;
+                            hiddenLinks.querySelectorAll('li').forEach(li => {
+                                if (!li.classList.contains('language-switcher')) {
+                                    hasRealNavItems = true;
+                                }
+                            });
+                            
+                            if (!hasRealNavItems) {
                                 hiddenLinks.classList.add('hidden');
                             }
                         }
