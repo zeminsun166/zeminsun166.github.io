@@ -299,12 +299,20 @@ function generateNavigationLinks() {
     
     // 重新触发greedy navigation插件的更新
     if (typeof updateNav === 'function') {
+      // 重置插件的状态，防止自动添加重复项
+      if (window.breaks && Array.isArray(window.breaks)) {
+        window.breaks.length = 0;
+      }
       updateNav();
     }
     
     // 强制重新计算布局，确保折叠框立即显示
     setTimeout(() => {
       if (typeof updateNav === 'function') {
+        // 再次重置状态
+        if (window.breaks && Array.isArray(window.breaks)) {
+          window.breaks.length = 0;
+        }
         updateNav();
       }
       // 触发窗口resize事件，确保greedy navigation插件重新计算
@@ -323,6 +331,45 @@ function generateNavigationLinks() {
           console.warn('WARNING: Duplicate navigation items detected!');
           console.warn('Original titles:', titles);
           console.warn('Unique titles:', uniqueTitles);
+          
+          // 如果发现重复，强制清理并重新生成
+          console.log('Forcing cleanup of duplicate items...');
+          const allNavItems = mobileNavContainer.querySelectorAll('li:not(.language-switcher)');
+          const languageSwitcher = mobileNavContainer.querySelector('.language-switcher');
+          
+          // 移除所有导航项
+          allNavItems.forEach(item => item.remove());
+          
+          // 重新创建导航项
+          navData.forEach((item) => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            
+            a.href = `#${item.section}`;
+            a.textContent = item.title;
+            a.className = 'nav-link-mobile';
+            a.dataset.section = item.section;
+            
+            // 添加点击事件处理
+            a.addEventListener('click', function(e) {
+              e.preventDefault();
+              const targetSection = document.getElementById(item.section);
+              if (targetSection) {
+                targetSection.style.scrollMarginTop = '100px';
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            });
+            
+            li.appendChild(a);
+            mobileNavContainer.appendChild(li);
+          });
+          
+          // 确保语言切换器在最后
+          if (languageSwitcher) {
+            mobileNavContainer.appendChild(languageSwitcher);
+          }
+          
+          console.log('Forced cleanup completed');
         }
       }, 100);
     }, 50);

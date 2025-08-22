@@ -12,6 +12,9 @@ var $hlinks = $('#site-nav .hidden-links');
 
 var breaks = [];
 
+// 将breaks数组暴露到全局作用域，以便外部重置
+window.breaks = breaks;
+
 function updateNav() {
 
   var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
