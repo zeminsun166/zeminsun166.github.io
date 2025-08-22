@@ -188,3 +188,29 @@ $(window).on('orientationchange', function() {
     initMobileNav(); // 重新初始化移动端状态
   }, 100);
 });
+
+// 添加URL变化监听器，确保在语言切换后正确更新导航
+let currentUrl = window.location.href;
+function checkUrlChange() {
+  if (currentUrl !== window.location.href) {
+    currentUrl = window.location.href;
+    console.log('URL changed, updating greedy navigation...');
+    
+    // 延迟更新，确保页面内容已加载
+    setTimeout(function() {
+      updateNav();
+      initMobileNav(); // 重新初始化移动端状态
+    }, 300);
+  }
+}
+
+// 定期检查URL变化
+setInterval(checkUrlChange, 100);
+
+// 监听浏览器历史变化
+$(window).on('popstate', function() {
+  setTimeout(function() {
+    updateNav();
+    initMobileNav(); // 重新初始化移动端状态
+  }, 100);
+});

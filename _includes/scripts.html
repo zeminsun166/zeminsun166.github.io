@@ -107,6 +107,62 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Mobile navigation fix initialized - folded state enforced with CSS');
       }
       
+      // 添加URL变化监听器，确保在语言切换后正确更新导航
+      let currentUrl = window.location.href;
+      function checkUrlChange() {
+        if (currentUrl !== window.location.href) {
+          currentUrl = window.location.href;
+          console.log('URL changed, updating navigation...');
+          
+          // 延迟更新，确保页面内容已加载
+          setTimeout(() => {
+            window.updateNav();
+            
+            // 重新初始化移动端状态
+            if (isMobile()) {
+              var $hlinks = $('#site-nav .hidden-links');
+              var $btn = $('#site-nav button');
+              
+              if ($hlinks.length && !$btn.hasClass('close')) {
+                $hlinks.addClass('hidden');
+                $hlinks.css({
+                  'display': 'none',
+                  'visibility': 'hidden',
+                  'opacity': '0',
+                  'pointer-events': 'none'
+                });
+              }
+            }
+          }, 300);
+        }
+      }
+      
+      // 定期检查URL变化
+      setInterval(checkUrlChange, 100);
+      
+      // 监听浏览器历史变化
+      window.addEventListener('popstate', function() {
+        setTimeout(() => {
+          window.updateNav();
+          
+          // 重新初始化移动端状态
+          if (isMobile()) {
+            var $hlinks = $('#site-nav .hidden-links');
+            var $btn = $('#site-nav button');
+            
+            if ($hlinks.length && !$btn.hasClass('close')) {
+              $hlinks.addClass('hidden');
+              $hlinks.css({
+                'display': 'none',
+                'visibility': 'hidden',
+                'opacity': '0',
+                'pointer-events': 'none'
+              });
+            }
+          }
+        }, 100);
+      });
+      
       // 监听窗口大小变化
       $(window).on('resize', function() {
         setTimeout(function() {

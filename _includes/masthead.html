@@ -219,6 +219,23 @@ function generateNavigationLinks() {
         }
       }
     }
+    
+    // 强制更新所有导航项文本，包括那些可能被移动到hidden-links中的项目
+    setTimeout(function() {
+      const allNavItems = document.querySelectorAll('.greedy-nav li:not(.language-switcher)');
+      allNavItems.forEach((li, index) => {
+        if (index < navData.length) {
+          const item = navData[index];
+          const a = li.querySelector('a');
+          if (a && a.textContent !== item.title) {
+            a.textContent = item.title;
+            a.href = `#${item.section}`;
+            a.dataset.section = item.section;
+            console.log('Updated navigation item text:', item.title);
+          }
+        }
+      });
+    }, 100);
   }
 }
 
@@ -270,6 +287,36 @@ document.addEventListener('languageChanged', function() {
     }
     // 触发窗口resize事件，确保greedy navigation插件重新计算
     window.dispatchEvent(new Event('resize'));
+  }, 100);
+});
+
+// 添加URL变化监听器，确保在语言切换后正确更新
+let currentUrl = window.location.href;
+function checkUrlChange() {
+  if (currentUrl !== window.location.href) {
+    currentUrl = window.location.href;
+    console.log('URL changed, updating navigation links...');
+    
+    // 延迟更新，确保页面内容已加载
+    setTimeout(() => {
+      generateNavigationLinks();
+      if (typeof updateNav === 'function') {
+        updateNav();
+      }
+    }, 300);
+  }
+}
+
+// 定期检查URL变化
+setInterval(checkUrlChange, 100);
+
+// 监听浏览器历史变化
+window.addEventListener('popstate', function() {
+  setTimeout(() => {
+    generateNavigationLinks();
+    if (typeof updateNav === 'function') {
+      updateNav();
+    }
   }, 100);
 });
 </script>
