@@ -213,7 +213,25 @@ function generateNavigationLinks() {
     // 让greedy navigation插件正常工作，不要强制重置状态
     if (typeof updateNav === 'function') {
       console.log('Calling updateNav() to let greedy navigation work normally');
-      updateNav();
+      
+      // 在调用updateNav之前，先阻止插件的自动添加行为
+      // 通过临时修改visible-links的内容来防止插件自动移动项目
+      const visibleLinks = document.querySelector('ul.visible-links');
+      if (visibleLinks) {
+        // 临时保存visible-links的原始内容
+        const originalVisibleContent = visibleLinks.innerHTML;
+        
+        // 清空visible-links，这样插件就不会有项目可以移动到hidden-links
+        visibleLinks.innerHTML = '';
+        
+        // 调用updateNav
+        updateNav();
+        
+        // 恢复visible-links的内容
+        visibleLinks.innerHTML = originalVisibleContent;
+      } else {
+        updateNav();
+      }
     }
     
     // 检查最终结果
