@@ -174,12 +174,8 @@ function generateNavigationLinks() {
   if (mobileNavContainer) {
     console.log('=== Mobile Navigation Debug ===');
     
-    // 首先，移除所有现有的导航 li 元素（除了语言切换器）
-    const existingNavItems = mobileNavContainer.querySelectorAll('li:not(.language-switcher)');
-    console.log('Removing existing navigation items:', existingNavItems.length);
-    existingNavItems.forEach(item => item.remove());
-    
-    // 确保语言切换器在最后
+    // 不要过早清空hidden-links，让插件自动管理
+    // 只确保语言切换器在最后
     const languageSwitcher = mobileNavContainer.querySelector('.language-switcher');
     if (languageSwitcher) {
       mobileNavContainer.appendChild(languageSwitcher);
