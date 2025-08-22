@@ -36,6 +36,30 @@ In the past 5 years, as **first author or corresponding author**, he has publish
 - 2011.09 - 2015.07, Jilin University, Software Engineering, Bachelor's
 
 # Publications {#publications}
+
+## Highly Cited
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/paper/Bargain-match.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10024868/), *IEEE Transactions on Mobile Computing*, 23(2), 2024: 1655-1673. **(IF=7.9) 
+(SCI, CCF A-class Journal) (ESI Highly Cited Paper, IEEE TMC Popular Article)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:aqlVkmm33-oC'></span></strong>
+**Zemin Sun**, Geng Sun\*, Yanheng Liu, Jian Wang, and Dongpu Cao. 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/paper/Joint.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/), *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A-class Journal) (IEEE TMC Popular Article)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:_kc_bZDykSQC'></span></strong>
+Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung. 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/paper/survey.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Applications of Game Theory in Vehicular Networks: A Survey](https://ieeexplore.ieee.org/abstract/document/9524815/), *IEEE Communications Surveys & Tutorials*, 23(4): 2660-2710, 2021. **(IF=33.8) (CAS Zone 1)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:Se3iqnhoufwC'></span></strong>  
+**Zemin Sun**, Yanheng Liu\*, Jian Wang, Guofa Li, Carie Anil, Keqiang Li, Xinyu Guo, Geng Sun\*, Daxin Tian\*, and Dongpu Cao. 
+</div>
+</div>
+
 1. **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404), *IEEE Transactions on Mobile Computing*.* **(IF=7.9) (SCI, CCF A-class Journal)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:QIV2ME_5wuYC'></span></strong>
 2. **Zemin Sun**, Geng Sun\*, Yanheng Liu, Jian Wang, and Dongpu Cao. [BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10024868/), *IEEE Transactions on Mobile Computing*, 23(2), 2024: 1655-1673. **(IF=7.9) (SCI, CCF A-class Journal) (ESI Highly Cited Paper, IEEE TMC Popular Article)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:aqlVkmm33-oC'></span></strong>
 3. **Zemin Sun**, Geng Sun\*, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, [A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC](https://arxiv.org/abs/2404.04597), *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A-class Conference)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:7PzlFSSx8tAC'></span></strong>  
@@ -57,10 +81,8 @@ In the past 5 years, as **first author or corresponding author**, he has publish
 19. Geng Sun, Jiayun Zhang, **Zemin Sun\***, Long He, and Jiahui Li. [Collaborative Task offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/9973467/), *IEEE International Conference on Mobile Ad Hoc and Smart Systems (IEEE MASS 2022)*. **(CCF C-class Conference)**
 20. Geng Sun, Long He, **Zemin Sun\***, Jiayun Zhang, and Jiahui Li. [Task Offloading for Post-disaster Rescue in Vehicular Fog Computing-assisted UAV Networks](https://ieeexplore.ieee.org/abstract/document/10076577/), *IEEE 18th International Conference on Mobility, Sensing and Networking (IEEE MSN 2022)*. **(CCF C-class Conference)**
 21. Ye Wang, Yanheng Liu, **Zemin Sun\***, Lingling Liu, Jiahui Li, and Geng Sun. [Priority-aware Task Offloading and Resource Allocation in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10076601/), *IEEE 18th International Conference on Mobility, Sensing and Networking (IEEE MSN 2022)*. **(CCF C-class Conference)**
-22. Geng Sun, Jiahui Li, Aimin Wang\*, Qingqing Wu\*, **Zemin Sun**, Yanheng Liu. [Secure and Energy-Efficient UAV Relay Communications Exploiting Collaborative Beamforming](https://ieeexplore.ieee.org/abstract/document/9798882), *IEEE Transactions on Communications*, 70(8), 5401-5416, 2022. **(IF=6.166) (SCI, CCF B Journal)**
-23. Geng Sun, Jiahui Li, Aimin Wang\*, Qingqing Wu, **Zemin Sun**, Yanheng Liu, Shuang Liang. [Collaborative Beamforming for UAV Networks Exploiting Swarm Intelligence](https://ieeexplore.ieee.org/abstract/document/9920738), *IEEE Wireless Communications*, 29(4): 10-17, 2022. **(IF=11.39) (SCI, CAS Zone 1)**
-24. Long He, Geng Sun\*, **Zemin Sun**, Pengfei Wang, Jiahui Li, Shuang Liang, Dusit Niyato. [An Online Joint Optimization Approach for QoE Maximization in UAV-Enabled Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10621306), *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A-class Conference)**
-25. Jing Zhang, Dongyang Gao, Jiacheng Wang, **Zemin Sun**, Shuang Liang, Ruichen Zhang, Geng Sun\*, [Real-Time Beam Tracking Algorithm for UAVs in Millimeter-wave Networks with Adaptive Beamwidth Adjustment](https://ieeexplore.ieee.org/abstract/document/11059576), *The 21st International Wireless Communications & Mobile Computing Conference (IEEE IWCMC 2025)*. **(Best Paper Award)**
+22. Geng Sun, Jiahui Li, Aimin Wang\*, Qingqing Wu\*, **Zemin Sun**, Yanheng Liu. [Secure and Energy-Efficient UAV Relay Communications Exploiting Collaborative Beamforming](https://ieeexplore.ieee.org/abstract/document/9798882), *IEEE Transactions on Communications*, 70(8), 5401-5416, 2022. **(IF=6.166) (SCI, CCF B Journal)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:0EnyYjriUFMC'></span></strong>
+
 
 # Research Projects {#projects}
 1. China Postdoctoral Science Foundation General Project, Research on Elastic Collaborative Optimization Methods for Task Offloading and Resource Allocation in Mobile Edge Networks (2023M731282), 80,000 RMB (**Principal Investigator**)
@@ -90,11 +112,23 @@ In the past 5 years, as **first author or corresponding author**, he has publish
 - Reviewer for multiple top-tier journals and academic conferences
   - IEEE Transactions on Mobile Computing
   - IEEE Transactions on Communications
-  - IEEE Transactions on Wireless Communications 
+  - IEEE Transactions on Wireless Communications
+  - IEEE Transactions on Vehicular Technology
+  - IEEE Internet of Things Journal
+  - IEEE Transactions on Network and Service Management
+  - IEEE Communications Magazine
+  - IEEE Transactions on Emerging Topics in Computing 
 
 # Awards and Honors {#awards}
-- ACM China Outstanding Doctoral Dissertation Award
-- China Electronics Society IoT Expert Committee Outstanding Journal Paper Award
-- Jilin University First-Class Graduate Student Excellence Scholarship
+- China Business Federation Science and Technology Award Second Prize (2023): Distributed Collaborative Beamforming Dynamic Multi-objective Optimization Method and Application
+- ACM China Outstanding Doctoral Dissertation Award (2024, Changchun Branch) (8/12)
+- Paper "BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks" won the 2022-2023 China Electronics Society IoT Expert Committee Outstanding Journal Paper Award
+- China Scholarship Council Government-sponsored Study Abroad Scholarship
 - National Scholarship for Master's Students
-- Best Paper Award at IEEE IWCMC 2025 
+- Jilin University 2018 Outstanding Graduate Student
+- Jilin University Outstanding Graduate Student
+- Jilin University Outstanding Graduate Student
+- Jilin University Outstanding Master's Thesis
+- Jilin University First-Class Graduate Student Excellence Scholarship
+- Jilin University Second-Class Graduate Student Excellence Scholarship
+- Jilin University Graduate Student Academic Performance Scholarship (twice) 
