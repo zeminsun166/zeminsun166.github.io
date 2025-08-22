@@ -365,6 +365,11 @@ function generateNavigationLinks() {
         mobileNavContainer.appendChild(li);
       });
     }
+    
+    // 重新触发greedy navigation插件的更新
+    if (typeof updateNav === 'function') {
+      updateNav();
+    }
   }
 }
 
@@ -385,6 +390,15 @@ window.addEventListener('load', function() {
   setTimeout(() => {
     generateNavigationLinks();
   }, 200);
+});
+
+// 监听页面可见性变化，确保在页面切换时重新初始化
+document.addEventListener('visibilitychange', function() {
+  if (!document.hidden) {
+    setTimeout(() => {
+      generateNavigationLinks();
+    }, 100);
+  }
 });
 
 // 语言切换后更新导航链接
