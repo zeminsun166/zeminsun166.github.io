@@ -214,21 +214,46 @@ function generateNavigationLinks() {
     if (typeof updateNav === 'function') {
       console.log('Calling updateNav() to let greedy navigation work normally');
       
-      // 在调用updateNav之前，先阻止插件的自动添加行为
-      // 通过临时修改visible-links的内容来防止插件自动移动项目
+      // 不要阻止插件的正常工作，让它根据屏幕宽度来决定折叠
+      // 但是要确保我们的导航项在visible-links中，这样插件才能正确计算
       const visibleLinks = document.querySelector('ul.visible-links');
       if (visibleLinks) {
-        // 临时保存visible-links的原始内容
-        const originalVisibleContent = visibleLinks.innerHTML;
-        
-        // 清空visible-links，这样插件就不会有项目可以移动到hidden-links
+        // 确保visible-links包含我们的导航项，这样插件才能正确计算哪些需要折叠
         visibleLinks.innerHTML = '';
+        navData.forEach((item, index) => {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          
+          a.href = `#${item.section}`;
+          a.textContent = item.title;
+          a.className = 'nav-link';
+          a.dataset.section = item.section;
+          
+          // 添加点击事件处理锚点跳转
+          a.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetSection = document.getElementById(item.section);
+            if (targetSection) {
+              targetSection.style.scrollMarginTop = '100px';
+              targetSection.scrollIntoView({ behavior: 'smooth' });
+            }
+          });
+          
+          li.appendChild(a);
+          visibleLinks.appendChild(li);
+        });
         
-        // 调用updateNav
+        // 现在调用updateNav，让插件根据屏幕宽度决定哪些项目需要折叠
         updateNav();
         
-        // 恢复visible-links的内容
-        visibleLinks.innerHTML = originalVisibleContent;
+        // 确保语言切换器在hidden-links的最后
+        const languageSwitcher = mobileNavContainer.querySelector('.language-switcher');
+        if (languageSwitcher) {
+          // 如果语言切换器不在hidden-links中，移动它
+          if (!mobileNavContainer.contains(languageSwitcher)) {
+            mobileNavContainer.appendChild(languageSwitcher);
+          }
+        }
       } else {
         updateNav();
       }
