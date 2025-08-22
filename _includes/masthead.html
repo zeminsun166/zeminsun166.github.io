@@ -214,12 +214,13 @@ function generateNavigationLinks() {
     if (typeof updateNav === 'function') {
       console.log('Calling updateNav() to let greedy navigation work normally');
       
-      // 不要阻止插件的正常工作，让它根据屏幕宽度来决定折叠
-      // 但是要确保我们的导航项在visible-links中，这样插件才能正确计算
+      // 重新设计逻辑：让插件完全控制折叠，我们只提供初始数据
       const visibleLinks = document.querySelector('ul.visible-links');
       if (visibleLinks) {
-        // 确保visible-links包含我们的导航项，这样插件才能正确计算哪些需要折叠
+        // 清空visible-links，让插件完全控制
         visibleLinks.innerHTML = '';
+        
+        // 将所有导航项添加到visible-links，让插件决定哪些需要折叠
         navData.forEach((item, index) => {
           const li = document.createElement('li');
           const a = document.createElement('a');
@@ -243,7 +244,11 @@ function generateNavigationLinks() {
           visibleLinks.appendChild(li);
         });
         
-        // 现在调用updateNav，让插件根据屏幕宽度决定哪些项目需要折叠
+        // 清空hidden-links，只保留语言切换器
+        const existingHiddenItems = mobileNavContainer.querySelectorAll('li:not(.language-switcher)');
+        existingHiddenItems.forEach(item => item.remove());
+        
+        // 现在调用updateNav，让插件根据屏幕宽度自动决定哪些项目需要折叠
         updateNav();
         
         // 确保语言切换器在hidden-links的最后
