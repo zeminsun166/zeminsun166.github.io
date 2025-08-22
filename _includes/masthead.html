@@ -83,89 +83,8 @@ function generateNavigationLinks() {
         a.textContent = item.title; // 确保文本内容被更新
         a.dataset.section = item.section;
         
-        // 移除旧的点击事件监听器并重新添加
-        const newA = a.cloneNode(true);
-        li.replaceChild(newA, a);
-        
-        // 添加新的点击事件处理锚点跳转
-        newA.addEventListener('click', function(e) {
-          e.preventDefault();
-          
-          console.log('=== Navigation Click Debug ===');
-          console.log('Current URL:', window.location.href);
-          console.log('Current pathname:', window.location.pathname);
-          console.log('Clicking on:', item.title, 'section:', item.section);
-          
-          // 尝试多种方式查找目标元素
-          let targetSection = document.getElementById(item.section);
-          
-          // 如果直接查找失败，尝试其他方法
-          if (!targetSection) {
-            console.log('Direct ID lookup failed, trying alternative methods...');
-            
-            // 方法1：查找包含特定文本的标题元素
-            const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
-            console.log('Found headings:', headings.length);
-            
-            for (let heading of headings) {
-              console.log('Checking heading:', heading.textContent.trim(), 'ID:', heading.id);
-              if (heading.textContent.includes(item.title) || heading.id === item.section) {
-                targetSection = heading;
-                console.log('Found target heading:', heading);
-                break;
-              }
-            }
-            
-            // 方法2：查找所有可能的锚点
-            if (!targetSection) {
-              console.log('Heading search failed, trying anchor search...');
-              const allAnchors = document.querySelectorAll('[id]');
-              console.log('All elements with ID:', allAnchors.length);
-              
-              for (let anchor of allAnchors) {
-                console.log('Anchor ID:', anchor.id, 'Tag:', anchor.tagName, 'Text:', anchor.textContent.substring(0, 50));
-                if (anchor.id === item.section || anchor.id.includes(item.section)) {
-                  targetSection = anchor;
-                  console.log('Found target anchor:', anchor);
-                  break;
-                }
-              }
-            }
-            
-            // 方法3：查找包含section名称的span或其他元素
-            if (!targetSection) {
-              console.log('Anchor search failed, trying span search...');
-              const spans = document.querySelectorAll('span[id]');
-              for (let span of spans) {
-                if (span.id === item.section) {
-                  targetSection = span;
-                  console.log('Found target span:', span);
-                  break;
-                }
-              }
-            }
-          }
-          
-          console.log('Final target element found:', targetSection);
-          
-          if (targetSection) {
-            // 确保元素可见
-            targetSection.style.scrollMarginTop = '100px'; // 为固定导航栏留出空间
-            targetSection.scrollIntoView({ behavior: 'smooth' });
-            console.log('Successfully scrolled to section:', item.section);
-          } else {
-            console.log('All search methods failed for section:', item.section);
-            // 尝试查找所有可能的锚点
-            const allAnchors = document.querySelectorAll('[id]');
-            console.log('All available anchors:', Array.from(allAnchors).map(el => ({id: el.id, tag: el.tagName, text: el.textContent.substring(0, 30)})));
-            
-            // 如果还是找不到，尝试使用浏览器默认的锚点跳转
-            console.log('Falling back to default anchor behavior');
-            window.location.hash = item.section;
-          }
-          
-          console.log('=== End Debug ===');
-        });
+        // 使用辅助函数添加点击事件处理
+        addNavigationClickHandler(a, item);
       }
     }
   });
@@ -342,11 +261,17 @@ function forceUpdateAllNavigationText() {
     if (index < currentNavData.length) {
       const item = currentNavData[index];
       const a = li.querySelector('a');
-      if (a && a.textContent !== item.title) {
-        a.textContent = item.title;
+      if (a) {
+        // 更新文本内容和属性
+        if (a.textContent !== item.title) {
+          a.textContent = item.title;
+          console.log('Updated visible navigation item:', item.title);
+        }
         a.href = `#${item.section}`;
         a.dataset.section = item.section;
-        console.log('Updated visible navigation item:', item.title);
+        
+        // 重新添加点击事件处理
+        addNavigationClickHandler(a, item);
       }
     }
   });
@@ -357,13 +282,106 @@ function forceUpdateAllNavigationText() {
     if (index < currentNavData.length) {
       const item = currentNavData[index];
       const a = li.querySelector('a');
-      if (a && a.textContent !== item.title) {
-        a.textContent = item.title;
+      if (a) {
+        // 更新文本内容和属性
+        if (a.textContent !== item.title) {
+          a.textContent = item.title;
+          console.log('Updated hidden navigation item:', item.title);
+        }
         a.href = `#${item.section}`;
         a.dataset.section = item.section;
-        console.log('Updated hidden navigation item:', item.title);
+        
+        // 重新添加点击事件处理
+        addNavigationClickHandler(a, item);
       }
     }
+  });
+}
+
+// 添加导航点击事件处理的辅助函数
+function addNavigationClickHandler(linkElement, item) {
+  // 移除旧的点击事件监听器
+  const newLink = linkElement.cloneNode(true);
+  linkElement.parentNode.replaceChild(newLink, linkElement);
+  
+  // 添加新的点击事件处理
+  newLink.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    console.log('=== Navigation Click Debug ===');
+    console.log('Current URL:', window.location.href);
+    console.log('Current pathname:', window.location.pathname);
+    console.log('Clicking on:', item.title, 'section:', item.section);
+    
+    // 尝试多种方式查找目标元素
+    let targetSection = document.getElementById(item.section);
+    
+    // 如果直接查找失败，尝试其他方法
+    if (!targetSection) {
+      console.log('Direct ID lookup failed, trying alternative methods...');
+      
+      // 方法1：查找包含特定文本的标题元素
+      const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+      console.log('Found headings:', headings.length);
+      
+      for (let heading of headings) {
+        console.log('Checking heading:', heading.textContent.trim(), 'ID:', heading.id);
+        if (heading.textContent.includes(item.title) || heading.id === item.section) {
+          targetSection = heading;
+          console.log('Found target heading:', heading);
+          break;
+        }
+      }
+      
+      // 方法2：查找所有可能的锚点
+      if (!targetSection) {
+        console.log('Heading search failed, trying anchor search...');
+        const allAnchors = document.querySelectorAll('[id]');
+        console.log('All anchors:', allAnchors.length);
+        
+        for (let anchor of allAnchors) {
+          console.log('Anchor ID:', anchor.id, 'Tag:', anchor.tagName, 'Text:', anchor.textContent.substring(0, 50));
+          if (anchor.id === item.section || anchor.id.includes(item.section)) {
+            targetSection = anchor;
+            console.log('Found target anchor:', anchor);
+            break;
+          }
+        }
+      }
+      
+      // 方法3：查找包含section名称的span或其他元素
+      if (!targetSection) {
+        console.log('Anchor search failed, trying span search...');
+        const spans = document.querySelectorAll('span[id]');
+        for (let span of spans) {
+          if (span.id === item.section) {
+            targetSection = span;
+            console.log('Found target span:', span);
+            break;
+          }
+        }
+      }
+    }
+    
+    console.log('Final target element found:', targetSection);
+    
+    if (targetSection) {
+      // 确保元素可见
+      targetSection.style.scrollMarginTop = '100px'; // 为固定导航栏留出空间
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+      console.log('Successfully scrolled to section:', item.section);
+    } else {
+      console.log('All search methods failed for section:', item.section);
+      // 尝试查找所有可能的锚点
+      const allAnchors = document.querySelectorAll('[id]');
+      console.log('All available anchors:', Array.from(allAnchors).map(el => ({id: el.id, tag: el.tagName, text: el.textContent.substring(0, 30)})));
+      
+      // 如果还是找不到，尝试使用浏览器默认的锚点跳转
+      console.log('Falling back to default anchor behavior');
+      window.location.hash = item.section;
+    }
+    
+    console.log('=== End Debug ===');
   });
 }
 
