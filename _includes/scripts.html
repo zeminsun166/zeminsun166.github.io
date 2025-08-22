@@ -133,6 +133,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
               }
             }
+            
+            // 强制更新所有导航项文本
+            if (typeof window.forceUpdateAllNavigationText === 'function') {
+              window.forceUpdateAllNavigationText();
+            }
           }, 300);
         }
       }
@@ -159,6 +164,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 'pointer-events': 'none'
               });
             }
+          }
+          
+          // 强制更新所有导航项文本
+          if (typeof window.forceUpdateAllNavigationText === 'function') {
+            window.forceUpdateAllNavigationText();
           }
         }, 100);
       });

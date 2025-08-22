@@ -200,6 +200,11 @@ function checkUrlChange() {
     setTimeout(function() {
       updateNav();
       initMobileNav(); // 重新初始化移动端状态
+      
+      // 强制更新所有导航项文本
+      if (typeof window.forceUpdateAllNavigationText === 'function') {
+        window.forceUpdateAllNavigationText();
+      }
     }, 300);
   }
 }
@@ -212,5 +217,10 @@ $(window).on('popstate', function() {
   setTimeout(function() {
     updateNav();
     initMobileNav(); // 重新初始化移动端状态
+    
+    // 强制更新所有导航项文本
+    if (typeof window.forceUpdateAllNavigationText === 'function') {
+      window.forceUpdateAllNavigationText();
+    }
   }, 100);
 });

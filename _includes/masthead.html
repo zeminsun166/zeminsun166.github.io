@@ -222,10 +222,14 @@ function generateNavigationLinks() {
     
     // 强制更新所有导航项文本，包括那些可能被移动到hidden-links中的项目
     setTimeout(function() {
+      const currentLang = getCurrentLanguage();
+      const currentNavData = navigationData[currentLang];
+      if (!currentNavData) return;
+      
       const allNavItems = document.querySelectorAll('.greedy-nav li:not(.language-switcher)');
       allNavItems.forEach((li, index) => {
-        if (index < navData.length) {
-          const item = navData[index];
+        if (index < currentNavData.length) {
+          const item = currentNavData[index];
           const a = li.querySelector('a');
           if (a && a.textContent !== item.title) {
             a.textContent = item.title;
@@ -303,6 +307,8 @@ function checkUrlChange() {
       if (typeof updateNav === 'function') {
         updateNav();
       }
+      // 强制更新所有导航项文本
+      forceUpdateAllNavigationText();
     }, 300);
   }
 }
@@ -317,6 +323,55 @@ window.addEventListener('popstate', function() {
     if (typeof updateNav === 'function') {
       updateNav();
     }
+    // 强制更新所有导航项文本
+    forceUpdateAllNavigationText();
   }, 100);
 });
+
+// 强制更新所有导航项文本，包括那些可能被移动到hidden-links中的项目
+function forceUpdateAllNavigationText() {
+  const currentLang = getCurrentLanguage();
+  const currentNavData = navigationData[currentLang];
+  if (!currentNavData) return;
+  
+  console.log('Force updating all navigation text for language:', currentLang);
+  
+  // 更新visible-links中的项目
+  const visibleItems = document.querySelectorAll('.greedy-nav .visible-links li');
+  visibleItems.forEach((li, index) => {
+    if (index < currentNavData.length) {
+      const item = currentNavData[index];
+      const a = li.querySelector('a');
+      if (a && a.textContent !== item.title) {
+        a.textContent = item.title;
+        a.href = `#${item.section}`;
+        a.dataset.section = item.section;
+        console.log('Updated visible navigation item:', item.title);
+      }
+    }
+  });
+  
+  // 更新hidden-links中的项目
+  const hiddenItems = document.querySelectorAll('.greedy-nav .hidden-links li:not(.language-switcher)');
+  hiddenItems.forEach((li, index) => {
+    if (index < currentNavData.length) {
+      const item = currentNavData[index];
+      const a = li.querySelector('a');
+      if (a && a.textContent !== item.title) {
+        a.textContent = item.title;
+        a.href = `#${item.section}`;
+        a.dataset.section = item.section;
+        console.log('Updated hidden navigation item:', item.title);
+      }
+    }
+  });
+}
+
+// 将函数暴露到全局作用域，供其他脚本调用
+window.forceUpdateAllNavigationText = forceUpdateAllNavigationText;
+
+// 在generateNavigationLinks函数中调用强制更新
+setTimeout(function() {
+  forceUpdateAllNavigationText();
+}, 100);
 </script>
