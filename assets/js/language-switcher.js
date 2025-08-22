@@ -91,6 +91,12 @@ document.addEventListener('DOMContentLoaded', function() {
                             
                             if (!hasRealNavItems) {
                                 hiddenLinks.classList.add('hidden');
+                            } else {
+                                // 有导航项时，确保折叠框在初始状态下是隐藏的
+                                const navButton = document.querySelector('.greedy-nav button');
+                                if (navButton && !navButton.classList.contains('close')) {
+                                    hiddenLinks.classList.add('hidden');
+                                }
                             }
                         }
                     }

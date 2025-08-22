@@ -25,12 +25,19 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isMobile()) {
           var $nav = $('#site-nav');
           var $btn = $('#site-nav button');
+          var $vlinks = $('#site-nav .visible-links');
           var $hlinks = $('#site-nav .hidden-links');
           
           if ($btn.length && $hlinks.length) {
-            // 移动端始终显示按钮
-            if (!$btn.hasClass('hidden')) {
-              $btn.removeClass('hidden');
+            // 先让原始的greedy navigation逻辑运行
+            var availableSpace = $nav.width() - $btn.width() - 30;
+            
+            // 检查visible-links是否溢出
+            if($vlinks.width() > availableSpace) {
+              // 显示按钮
+              if ($btn.hasClass('hidden')) {
+                $btn.removeClass('hidden');
+              }
             }
             
             // 移动端：检查是否有真正的导航项（不是语言切换器）
@@ -42,10 +49,24 @@ document.addEventListener('DOMContentLoaded', function() {
               }
             });
             
+            // 根据是否有真正的导航项来决定按钮的显示状态
             if (hasRealNavItems) {
-              $hlinks.removeClass('hidden');
+              // 有导航项时显示按钮，但折叠框保持隐藏状态（直到用户点击）
+              if ($btn.hasClass('hidden')) {
+                $btn.removeClass('hidden');
+              }
+              // 重要：不要自动显示折叠框，保持用户点击前的状态
+              if (!$hlinks.hasClass('hidden') && !$btn.hasClass('close')) {
+                $hlinks.addClass('hidden');
+              }
             } else {
-              $hlinks.addClass('hidden');
+              // 没有导航项时隐藏按钮和折叠框
+              if (!$btn.hasClass('hidden')) {
+                $btn.addClass('hidden');
+              }
+              if (!$hlinks.hasClass('hidden')) {
+                $hlinks.addClass('hidden');
+              }
             }
             
             console.log('Mobile navigation fix applied - real nav items:', hasRealNavItems);
@@ -62,10 +83,50 @@ document.addEventListener('DOMContentLoaded', function() {
       // 立即调用一次修复后的函数
       window.updateNav();
       
+      // 初始化移动端状态
+      if (isMobile()) {
+        var $hlinks = $('#site-nav .hidden-links');
+        var $btn = $('#site-nav button');
+        
+        // 强制设置初始状态
+        if ($hlinks.length) {
+          $hlinks.addClass('hidden');
+          $hlinks.css({
+            'display': 'none',
+            'visibility': 'hidden',
+            'opacity': '0',
+            'pointer-events': 'none'
+          });
+        }
+        
+        // 确保按钮没有close状态
+        if ($btn.length && $btn.hasClass('close')) {
+          $btn.removeClass('close');
+        }
+        
+        console.log('Mobile navigation fix initialized - folded state enforced with CSS');
+      }
+      
       // 监听窗口大小变化
       $(window).on('resize', function() {
         setTimeout(function() {
           window.updateNav();
+          
+          // 重新初始化移动端状态
+          if (isMobile()) {
+            var $hlinks = $('#site-nav .hidden-links');
+            var $btn = $('#site-nav button');
+            
+            if ($hlinks.length && !$btn.hasClass('close')) {
+              $hlinks.addClass('hidden');
+              $hlinks.css({
+                'display': 'none',
+                'visibility': 'hidden',
+                'opacity': '0',
+                'pointer-events': 'none'
+              });
+            }
+          }
         }, 100);
       });
       
@@ -73,6 +134,22 @@ document.addEventListener('DOMContentLoaded', function() {
       $(window).on('orientationchange', function() {
         setTimeout(function() {
           window.updateNav();
+          
+          // 重新初始化移动端状态
+          if (isMobile()) {
+            var $hlinks = $('#site-nav .hidden-links');
+            var $btn = $('#site-nav button');
+            
+            if ($hlinks.length && !$btn.hasClass('close')) {
+              $hlinks.addClass('hidden');
+              $hlinks.css({
+                'display': 'none',
+                'visibility': 'hidden',
+                'opacity': '0',
+                'pointer-events': 'none'
+              });
+            }
+          }
         }, 100);
       });
       

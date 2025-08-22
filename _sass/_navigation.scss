@@ -199,6 +199,13 @@
     background-color: $primary-color;
     color: #fff;
     cursor: pointer;
+    
+    // 当添加hidden类时隐藏按钮
+    &.hidden {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+    }
   }
 
   .visible-links {
@@ -259,6 +266,13 @@
     border-radius: $border-radius;
     background: #fff;
     box-shadow: 0 0 10px rgba(#000, 0.25);
+    
+    // 当添加hidden类时隐藏折叠框
+    &.hidden {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+    }
 
     a {
       margin: 0;
