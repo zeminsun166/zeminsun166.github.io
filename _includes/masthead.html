@@ -177,32 +177,6 @@ function generateNavigationLinks() {
     console.log('Removing existing navigation items:', existingNavItems.length);
     existingNavItems.forEach(item => item.remove());
     
-    // 然后，重新创建导航 li 元素
-    console.log('Creating new navigation items for:', navData.length, 'items');
-    navData.forEach((item, index) => {
-      const li = document.createElement('li');
-      const a = document.createElement('a');
-      
-      a.href = `#${item.section}`;
-      a.textContent = item.title;
-      a.className = 'nav-link-mobile';
-      a.dataset.section = item.section;
-      
-      // 添加点击事件处理
-      a.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetSection = document.getElementById(item.section);
-        if (targetSection) {
-          targetSection.style.scrollMarginTop = '100px';
-          targetSection.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-      
-      li.appendChild(a);
-      mobileNavContainer.appendChild(li);
-      console.log('Added mobile nav item:', item.title);
-    });
-    
     // 确保语言切换器在最后
     const languageSwitcher = mobileNavContainer.querySelector('.language-switcher');
     if (languageSwitcher) {
@@ -210,7 +184,7 @@ function generateNavigationLinks() {
       console.log('Moved language switcher to end');
     }
     
-    // 让greedy navigation插件正常工作，不要强制重置状态
+    // 让greedy navigation插件正常工作
     if (typeof updateNav === 'function') {
       console.log('Calling updateNav() to let greedy navigation work normally');
       
@@ -244,15 +218,10 @@ function generateNavigationLinks() {
           visibleLinks.appendChild(li);
         });
         
-        // 清空hidden-links，只保留语言切换器
-        const existingHiddenItems = mobileNavContainer.querySelectorAll('li:not(.language-switcher)');
-        existingHiddenItems.forEach(item => item.remove());
-        
         // 现在调用updateNav，让插件根据屏幕宽度自动决定哪些项目需要折叠
         updateNav();
         
         // 确保语言切换器在hidden-links的最后
-        const languageSwitcher = mobileNavContainer.querySelector('.language-switcher');
         if (languageSwitcher) {
           // 如果语言切换器不在hidden-links中，移动它
           if (!mobileNavContainer.contains(languageSwitcher)) {
@@ -263,66 +232,6 @@ function generateNavigationLinks() {
         updateNav();
       }
     }
-    
-    // 检查最终结果
-    setTimeout(() => {
-      const finalNavItems = mobileNavContainer.querySelectorAll('li:not(.language-switcher)');
-      console.log('Final check - Navigation items:', finalNavItems.length);
-      console.log('Final check - Navigation order:', Array.from(finalNavItems).map(li => li.textContent.trim()));
-      
-      // 检查是否有重复
-      const titles = Array.from(finalNavItems).map(li => li.textContent.trim());
-      const uniqueTitles = [...new Set(titles)];
-      if (titles.length !== uniqueTitles.length) {
-        console.warn('WARNING: Duplicate navigation items detected!');
-        console.warn('Original titles:', titles);
-        console.warn('Unique titles:', uniqueTitles);
-        
-        // 如果发现重复，强制清理并重新生成
-        console.log('Forcing cleanup of duplicate items...');
-        const allNavItems = mobileNavContainer.querySelectorAll('li:not(.language-switcher)');
-        const languageSwitcher = mobileNavContainer.querySelector('.language-switcher');
-        
-        // 移除所有导航项
-        allNavItems.forEach(item => item.remove());
-        
-        // 重新创建导航项
-        navData.forEach((item) => {
-          const li = document.createElement('li');
-          const a = document.createElement('a');
-          
-          a.href = `#${item.section}`;
-          a.textContent = item.title;
-          a.className = 'nav-link-mobile';
-          a.dataset.section = item.section;
-          
-          // 添加点击事件处理
-          a.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetSection = document.getElementById(item.section);
-            if (targetSection) {
-              targetSection.style.scrollMarginTop = '100px';
-              targetSection.scrollIntoView({ behavior: 'smooth' });
-            }
-          });
-          
-          li.appendChild(a);
-          mobileNavContainer.appendChild(li);
-        });
-        
-        // 确保语言切换器在最后
-        if (languageSwitcher) {
-          mobileNavContainer.appendChild(languageSwitcher);
-        }
-        
-        console.log('Forced cleanup completed');
-        
-        // 清理完成后，再次调用updateNav让插件正常工作
-        if (typeof updateNav === 'function') {
-          updateNav();
-        }
-      }
-    }, 100);
   }
 }
 
