@@ -37,7 +37,25 @@ redirect_from:
 - 2011.09 至 2015.07，吉林大学，软件工程，学士
 
 # 发表文章 {#publications}
-## 高被引
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2024</div><img src='images/paper/TJCCT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404)\\
+**Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. 
+
+ *IEEE Transactions on Mobile Computing*.* **(IF=7.9) (SCI, CCF A类期刊)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:QIV2ME_5wuYC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2024</div><img src='images/paper/TJCCT2.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC](https://arxiv.org/abs/2404.04597)\\
+**Zemin Sun**, Geng Sun\*, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, 
+
+*IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:7PzlFSSx8tAC'></span></strong>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2024</div><img src='images/paper/Bargain-match.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10024868/) \\
@@ -45,15 +63,6 @@ redirect_from:
 
 *IEEE Transactions on Mobile Computing*, 23(2), 2024: 1655-1673. **(IF=7.9) 
 (SCI, CCF A 类期刊) (ESI高被引论文，IEEE TMC Popular Article)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:aqlVkmm33-oC'></span></strong>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2024</div><img src='images/paper/Joint.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/) \\
-Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung. 
-
-*IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊) (IEEE TMC Popular Article)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:_kc_bZDykSQC'></span></strong>
 </div>
 </div>
 
@@ -66,28 +75,27 @@ Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusi
 </div>
 </div>
 
-1. **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404), *IEEE Transactions on Mobile Computing*.* **(IF=7.9) (SCI, CCF A类期刊)**
-2. **Zemin Sun**, Geng Sun\*, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, [A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC](https://arxiv.org/abs/2404.04597), *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)**
-3. Geng Sun, Minghua Yuan, **Zemin Sun\***, Jiacheng Wang, Hongyang Du, Dusit Niyato, Zhu Han, and Dong In Kim. [Online Collaborative Resource Allocation and Task Offloading for Multi-access Edge Computing](https://ieeexplore.ieee.org/document/11039083), *IEEE Transactions on Mobile Computing*, 2025, doi: 10.1109/TMC.2025.3580365. **(IF=7.9, CCF A类期刊)** 
-4. Geng Sun, Jiaxu Wu,  **Zemin Sun\***, Long He, Jiacheng Wang, Dusit Niyato, Abbas Jamalipour, Shiwen Mao. JC5A: Service Delay Minimization for Aerial MEC-assisted Industrial Cyber-Physical Systems, *IEEE Transactions on Services Computing*, 2025.  **(IF=5.8) (SCI, CCF A类期刊)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:7PzlFSSx8tAC'></span></strong>
-5. Geng Sun, Yixian Wang, **Zemin Sun\***, Qingqing Wu, Jiawen Kang, Dusit Niyato, Victor CM Leung. [Multi-objective Optimization for Multi-UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10643301), *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3446819. **(IF=7.9, CCF A类期刊）（IEEE TMC Popular Article)** 
-6. Geng Sun, Xiaoya Zheng, **Zemin Sun\***, Qingqing Wu\*, Jiahui Li, Yanheng Liu, and Victor CM Leung. [UAV-enabled Secure Communications via Collaborative Beamforming with Imperfect Eavesdropper Information](https://ieeexplore.ieee.org/abstract/document/10119186/), *IEEE Transactions on Mobile Computing*, 23(4): 3291-3308, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊)**
-7. **Zemin Sun**, Yanheng Liu, Jian Wang\*, Fang Mei, Weiwen Deng, and Yuming Ge. [Non-cooperative Game of Throughput and Hash Length for Adaptive Merkle Tree in Mobile Wireless Networks](https://ieeexplore.ieee.org/abstract/document/8642907/), *IEEE Transactions on Vehicular Technology*, 68(5): 4625-4650, 2019. **(IF=5.3) (中科院2区)**
-8. **Zemin Sun**, Yanheng Liu, Jian Wang\*, Rundong Yu, and Dongpu Cao. [Cross-layer Tradeoff of QoS and Security in Vehicular Ad Hoc Networks: A Game Theoretical Approach](https://www.sciencedirect.com/science/article/pii/S1389128621001390), *Computer Networks*, 192: 108031, 2021. **(IF=5.4) (CCF B 期刊)**
-9. Boxiong Wang, Hui Kang, Jiahui Li\*, Geng Sun\*, **Zemin Sun**, Jiacheng Wang, and Dusit Niyato. [UAV-assisted joint mobile edge computing and data collection via matching-enabled deep reinforcement learning](https://ieeexplore.ieee.org/abstract/document/10887202), *IEEE Internet of Things Journal*, 12(12): 19782-19800, 2025. **(IF=8.2) (SCI, 中科院1区)**
-10. Yangning Li, Hui Kang, Jiahui Li\*, Geng Sun\*, **Zemin Sun**, Jiacheng Wang, Changyuan Zhao, and Dusit Niyato. [A correlated data-driven collaborative beamforming approach for energy-efficient IoT data transmission](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10935348), *IEEE Internet of Things Journal* 12(12): 22443-22462, 2025, **(IF=8.2) (SCI, 中科院1区)**
-11. Geng Sun, Yixian Wang, **Zemin Sun\***, Long He, and Xiaoya Zheng. [Multi-objective Optimization for Multi-UAV-assisted Mobile Edge Computing](https://arxiv.org/abs/2404.15292), *IEEE International Conference on Communications* (*IEEE ICC 2022*). **(CCF C类会议)**
-12. Yixian Wang, Geng Sun\*, **Zemin Sun\***, Long He, Jiacheng Wang, Shiwen Mao. IRS-assisted Edge Computing for Vehicular Networks: A Generative Diffusion Model-based Stackelberg Game Approach. *IEEE International Conference on Communications (IEEE ICC 2025)*. **(CCF C类会议)**
-13. Zifan Lang, Guixia Liu, Geng Sun, Jiahui Li, **Zemin Sun**, Jiacheng Wang, Victor C.M. Leung. AoI-Sensitive Data Forwarding with Distributed Beamforming in UAV-Assisted IoT. AoI-Sensitive Data Forwarding with Distributed Beamforming in UAV-Assisted IoT. *2025 IEEE International Conference on Communications (IEEE ICC 2025)*. **(CCF C类会议)**
-14. Shuang Liang, Minhao Yin, Wenwen Xie, **Zemin Sun\***, Jiahui Li\*, Jiacheng Wang, and Hongyang Du. [UAV-Enabled Secure Data Collection and Energy Transfer in IoT via Diffusion Model-Enhanced Deep Reinforcement Learning](https://ieeexplore.ieee.org/abstract/document/10812918?casa_token=1StyqOaYX1EAAAAA:0KfoybZfMCuB2eZQD0jm4CRavMmkJSpe0xFsp8ePGF_6pzFN4G7HuvgN0sysqJ-Jee5a1304_g), *IEEE Internet of Things Journal*, 2024. **(IF=8.2) (SCI, 中科院1区)**
-15. Wanjun Zhang, Aimin Wang, Long He, **Zemin Sun\***, Jiahui Li and Geng Sun, [Task Offloading in UAV-assisted Vehicular Edge Computing Networks](https://link.springer.com/chapter/10.1007/978-981-97-0811-6_23), *International Conference on Algorithms and Architectures for Parallel Processing*, (*ICA3PP 2023*). **(CCF C类会议)**
-16. Geng Sun, Jiayun Zhang, **Zemin Sun\***, Long He, and Jiahui Li. [Collaborative Task offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/9973467/), *IEEE International Conference on Mobile Ad Hoc and Smart Systems (IEEE MASS 2022)*. **(CCF C类会议)**
-17. Geng Sun, Long He, **Zemin Sun\***, Jiayun Zhang, and Jiahui Li. [Task Offloading for Post-disaster Rescue in Vehicular Fog Computing-assisted UAV Networks](https://ieeexplore.ieee.org/abstract/document/10076577/), *IEEE 18th International Conference on Mobility, Sensing and Networking (IEEE MSN 2022)*. **(CCF C类会议)**
-18. Ye Wang, Yanheng Liu, **Zemin Sun\***, Lingling Liu, Jiahui Li, and Geng Sun. [Priority-aware Task Offloading and Resource Allocation in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10076601/), *IEEE 18th International Conference on Mobility, Sensing and Networking (IEEE MSN 2022)*. **(CCF C类会议)**
-19. Geng Sun, Jiahui Li, Aimin Wang\*, Qingqing Wu\*, **Zemin Sun**, Yanheng Liu. [Secure and Energy-Efficient UAV Relay Communications Exploiting Collaborative Beamforming](https://ieeexplore.ieee.org/abstract/document/9798882), *IEEE Transactions on Communications*, 70(8), 5401-5416, 2022. **(IF=6.166) (SCI, CCF B类期刊)**
-20. Geng Sun, Jiahui Li, Aimin Wang\*, Qingqing Wu, **Zemin Sun**, Yanheng Liu, Shuang Liang. [Collaborative Beamforming for UAV Networks Exploiting Swarm Intelligence](https://ieeexplore.ieee.org/abstract/document/9920738), *IEEE Wireless Communications*, 29(4): 10-17, 2022. **(IF=11.39) (SCI, 中科院1区)**
-21. Long He, Geng Sun\*, **Zemin Sun**, Pengfei Wang, Jiahui Li, Shuang Liang, Dusit Niyato. [An Online Joint Optimization Approach for QoE Maximization in UAV-Enabled Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10621306), *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)**
-22. Jing Zhang, Dongyang Gao, Jiacheng Wang, **Zemin Sun**, Shuang Liang, Ruichen Zhang, Geng Sun\*, [Real-Time Beam Tracking Algorithm for UAVs in Millimeter-wave Networks with Adaptive Beamwidth Adjustment](https://ieeexplore.ieee.org/abstract/document/11059576), *The 21st International Wireless Communications & Mobile Computing Conference (IEEE IWCMC 2025)*. **(Best Paper Award)**
+1. Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung. [Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/) *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊) (IEEE TMC Popular Article)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:_kc_bZDykSQC'></span></strong>
+2. Geng Sun, Minghua Yuan, **Zemin Sun\***, Jiacheng Wang, Hongyang Du, Dusit Niyato, Zhu Han, and Dong In Kim. [Online Collaborative Resource Allocation and Task Offloading for Multi-access Edge Computing](https://ieeexplore.ieee.org/document/11039083), *IEEE Transactions on Mobile Computing*, 2025, doi: 10.1109/TMC.2025.3580365. **(IF=7.9, CCF A类期刊)** 
+3. Geng Sun, Jiaxu Wu,  **Zemin Sun\***, Long He, Jiacheng Wang, Dusit Niyato, Abbas Jamalipour, Shiwen Mao. JC5A: Service Delay Minimization for Aerial MEC-assisted Industrial Cyber-Physical Systems, *IEEE Transactions on Services Computing*, 2025.  **(IF=5.8) (SCI, CCF A类期刊)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:7PzlFSSx8tAC'></span></strong>
+4. Geng Sun, Yixian Wang, **Zemin Sun\***, Qingqing Wu, Jiawen Kang, Dusit Niyato, Victor CM Leung. [Multi-objective Optimization for Multi-UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10643301), *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3446819. **(IF=7.9, CCF A类期刊）（IEEE TMC Popular Article)** 
+5. Geng Sun, Xiaoya Zheng, **Zemin Sun\***, Qingqing Wu\*, Jiahui Li, Yanheng Liu, and Victor CM Leung. [UAV-enabled Secure Communications via Collaborative Beamforming with Imperfect Eavesdropper Information](https://ieeexplore.ieee.org/abstract/document/10119186/), *IEEE Transactions on Mobile Computing*, 23(4): 3291-3308, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊)**
+6. **Zemin Sun**, Yanheng Liu, Jian Wang\*, Fang Mei, Weiwen Deng, and Yuming Ge. [Non-cooperative Game of Throughput and Hash Length for Adaptive Merkle Tree in Mobile Wireless Networks](https://ieeexplore.ieee.org/abstract/document/8642907/), *IEEE Transactions on Vehicular Technology*, 68(5): 4625-4650, 2019. **(IF=5.3) (中科院2区)**
+7. **Zemin Sun**, Yanheng Liu, Jian Wang\*, Rundong Yu, and Dongpu Cao. [Cross-layer Tradeoff of QoS and Security in Vehicular Ad Hoc Networks: A Game Theoretical Approach](https://www.sciencedirect.com/science/article/pii/S1389128621001390), *Computer Networks*, 192: 108031, 2021. **(IF=5.4) (CCF B 期刊)**
+8. Boxiong Wang, Hui Kang, Jiahui Li\*, Geng Sun\*, **Zemin Sun**, Jiacheng Wang, and Dusit Niyato. [UAV-assisted joint mobile edge computing and data collection via matching-enabled deep reinforcement learning](https://ieeexplore.ieee.org/abstract/document/10887202), *IEEE Internet of Things Journal*, 12(12): 19782-19800, 2025. **(IF=8.2) (SCI, 中科院1区)**
+9. Yangning Li, Hui Kang, Jiahui Li\*, Geng Sun\*, **Zemin Sun**, Jiacheng Wang, Changyuan Zhao, and Dusit Niyato. [A correlated data-driven collaborative beamforming approach for energy-efficient IoT data transmission](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10935348), *IEEE Internet of Things Journal* 12(12): 22443-22462, 2025, **(IF=8.2) (SCI, 中科院1区)**
+10. Geng Sun, Yixian Wang, **Zemin Sun\***, Long He, and Xiaoya Zheng. [Multi-objective Optimization for Multi-UAV-assisted Mobile Edge Computing](https://arxiv.org/abs/2404.15292), *IEEE International Conference on Communications* (*IEEE ICC 2022*). **(CCF C类会议)**
+11. Yixian Wang, Geng Sun\*, **Zemin Sun\***, Long He, Jiacheng Wang, Shiwen Mao. IRS-assisted Edge Computing for Vehicular Networks: A Generative Diffusion Model-based Stackelberg Game Approach. *IEEE International Conference on Communications (IEEE ICC 2025)*. **(CCF C类会议)**
+12. Zifan Lang, Guixia Liu, Geng Sun, Jiahui Li, **Zemin Sun**, Jiacheng Wang, Victor C.M. Leung. AoI-Sensitive Data Forwarding with Distributed Beamforming in UAV-Assisted IoT. AoI-Sensitive Data Forwarding with Distributed Beamforming in UAV-Assisted IoT. *2025 IEEE International Conference on Communications (IEEE ICC 2025)*. **(CCF C类会议)**
+13. Shuang Liang, Minhao Yin, Wenwen Xie, **Zemin Sun\***, Jiahui Li\*, Jiacheng Wang, and Hongyang Du. [UAV-Enabled Secure Data Collection and Energy Transfer in IoT via Diffusion Model-Enhanced Deep Reinforcement Learning](https://ieeexplore.ieee.org/abstract/document/10812918?casa_token=1StyqOaYX1EAAAAA:0KfoybZfMCuB2eZQD0jm4CRavMmkJSpe0xFsp8ePGF_6pzFN4G7HuvgN0sysqJ-Jee5a1304_g), *IEEE Internet of Things Journal*, 2024. **(IF=8.2) (SCI, 中科院1区)**
+14. Wanjun Zhang, Aimin Wang, Long He, **Zemin Sun\***, Jiahui Li and Geng Sun, [Task Offloading in UAV-assisted Vehicular Edge Computing Networks](https://link.springer.com/chapter/10.1007/978-981-97-0811-6_23), *International Conference on Algorithms and Architectures for Parallel Processing*, (*ICA3PP 2023*). **(CCF C类会议)**
+15. Geng Sun, Jiayun Zhang, **Zemin Sun\***, Long He, and Jiahui Li. [Collaborative Task offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/9973467/), *IEEE International Conference on Mobile Ad Hoc and Smart Systems (IEEE MASS 2022)*. **(CCF C类会议)**
+16. Geng Sun, Long He, **Zemin Sun\***, Jiayun Zhang, and Jiahui Li. [Task Offloading for Post-disaster Rescue in Vehicular Fog Computing-assisted UAV Networks](https://ieeexplore.ieee.org/abstract/document/10076577/), *IEEE 18th International Conference on Mobility, Sensing and Networking (IEEE MSN 2022)*. **(CCF C类会议)**
+17. Ye Wang, Yanheng Liu, **Zemin Sun\***, Lingling Liu, Jiahui Li, and Geng Sun. [Priority-aware Task Offloading and Resource Allocation in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10076601/), *IEEE 18th International Conference on Mobility, Sensing and Networking (IEEE MSN 2022)*. **(CCF C类会议)**
+18. Geng Sun, Jiahui Li, Aimin Wang\*, Qingqing Wu\*, **Zemin Sun**, Yanheng Liu. [Secure and Energy-Efficient UAV Relay Communications Exploiting Collaborative Beamforming](https://ieeexplore.ieee.org/abstract/document/9798882), *IEEE Transactions on Communications*, 70(8), 5401-5416, 2022. **(IF=6.166) (SCI, CCF B类期刊)**
+19. Geng Sun, Jiahui Li, Aimin Wang\*, Qingqing Wu, **Zemin Sun**, Yanheng Liu, Shuang Liang. [Collaborative Beamforming for UAV Networks Exploiting Swarm Intelligence](https://ieeexplore.ieee.org/abstract/document/9920738), *IEEE Wireless Communications*, 29(4): 10-17, 2022. **(IF=11.39) (SCI, 中科院1区)**
+20. Long He, Geng Sun\*, **Zemin Sun**, Pengfei Wang, Jiahui Li, Shuang Liang, Dusit Niyato. [An Online Joint Optimization Approach for QoE Maximization in UAV-Enabled Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10621306), *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)**
+21. Jing Zhang, Dongyang Gao, Jiacheng Wang, **Zemin Sun**, Shuang Liang, Ruichen Zhang, Geng Sun\*, [Real-Time Beam Tracking Algorithm for UAVs in Millimeter-wave Networks with Adaptive Beamwidth Adjustment](https://ieeexplore.ieee.org/abstract/document/11059576), *The 21st International Wireless Communications & Mobile Computing Conference (IEEE IWCMC 2025)*. **(Best Paper Award)**
 
 # 科研项目 {#projects}
 1. 中国博士后基金面上项目，移动边缘网络任务卸载及资源分配弹性协同优化方法研究 (2023M731282)，8万 (**项目负责人**)
