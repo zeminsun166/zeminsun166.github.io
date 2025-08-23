@@ -19,7 +19,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-**孙泽敏**，博士，吉林大学计算机科学与技术学院助理研究员，入选吉林大学“鼎新学者”支持计划。2019年9月受国家留学基金委资助赴加拿大滑铁卢大学（University of Waterloo）公派留学， 2022年7月获吉林大学计算机应用技术专业博士学位，2018年获吉林大学计算机应用技术专业硕士学位， 2015年获吉林大学软件学院学士学位。曾获ACM中国优秀博士学位论文奖、中国电子学会物联网专家委员会优秀期刊论文、吉林大学一等研究生优秀奖学金和硕士研究生国家奖学金等奖励和荣誉称号。
+**孙泽敏**，博士，吉林大学计算机科学与技术学院助理研究员，入选吉林大学“鼎新学者”支持计划。2019年9月受国家留学基金委资助赴加拿大滑铁卢大学公派留学， 2022年7月获吉林大学计算机应用技术专业博士学位，2018年获吉林大学计算机应用技术专业硕士学位， 2015年获吉林大学软件学院学士学位。曾获ACM中国优秀博士学位论文奖、中国电子学会物联网专家委员会优秀期刊论文、吉林大学一等研究生优秀奖学金和硕士研究生国家奖学金等奖励和荣誉称号。
 
 近5年，以**第一作者或通信作者身份**在IEEE TMC、IEEE TVT、IEEE COMST、IEEE INFOCOM和IEEE ICC等高水平期刊和国际会议上发表相关学术论文10余篇 <a href='https://scholar.google.com/citations?user=TJtQW8gAAAAJ'><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzeminsun166%2Fzeminsun166.github.io%2Fgoogle-scholar-stats%2Fgs_data_shieldsio.json&logo=google-scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations&cacheSeconds=3600" alt="citations"></a>)；申请发明专利 6 项，已获授权 3 项；主持中国博士后科学基金面上项目1项和博士后国（境）外学术交流项目1项目，并以主要参与人身份参加国家自然科学基金面上项目3项、国家自然科学基金国际(地区)合作与交流项目1项和吉林省科技发展计划项目3项。
 
@@ -39,26 +39,64 @@ redirect_from:
 # 发表文章 {#publications}
 
 ## 高被引
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/paper/Bargain-match.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10024868/), *IEEE Transactions on Mobile Computing*, 23(2), 2024: 1655-1673. **(IF=7.9) 
-(SCI, CCF A 类期刊) (ESI高被引论文，IEEE TMC Popular Article)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:aqlVkmm33-oC'></span></strong>
-**Zemin Sun**, Geng Sun\*, Yanheng Liu, Jian Wang, and Dongpu Cao. 
-</div>
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">IEEE 2024</div>
+      <img src='images/paper/Bargain-match.png' alt="sym" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+    **[BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10024868/)**
+    
+    *IEEE Transactions on Mobile Computing*, 23(2), 2024: 1655-1673. **(IF=7.9)**
+    
+    (SCI, CCF A 类期刊) (ESI高被引论文，IEEE TMC Popular Article)
+    
+    <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:aqlVkmm33-oC'></span></strong>
+    
+    **Zemin Sun**, Geng Sun\*, Yanheng Liu, Jian Wang, and Dongpu Cao.
+  </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/paper/Joint.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/), *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊) （IEEE TMC Popular Article）** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:_kc_bZDykSQC'></span></strong>
-Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung. 
-</div>
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">IEEE 2024</div>
+      <img src='images/paper/Joint.png' alt="sym" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+    **[Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/)**
+    
+    *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊)**
+    
+    (IEEE TMC Popular Article)
+    
+    <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:_kc_bZDykSQC'></span></strong>
+    
+    Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung.
+  </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/paper/survey.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Applications of Game Theory in Vehicular Networks: A Survey](https://ieeexplore.ieee.org/abstract/document/9524815/), *IEEE Communications Surveys & Tutorials*, 23(4): 2660-2710, 2021. **(IF=33.8) (中科院1区)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:Se3iqnhoufwC'></span></strong>  
-**Zemin Sun**, Yanheng Liu\*, Jian Wang, Guofa Li, Carie Anil, Keqiang Li, Xinyu Guo, Geng Sun\*, Daxin Tian\*, and Dongpu Cao. 
-</div>
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">IEEE 2021</div>
+      <img src='images/paper/survey.png' alt="sym" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+    **[Applications of Game Theory in Vehicular Networks: A Survey](https://ieeexplore.ieee.org/abstract/document/9524815/)**
+    
+    *IEEE Communications Surveys & Tutorials*, 23(4): 2660-2710, 2021. **(IF=33.8)**
+    
+    (中科院1区)
+    
+    <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:Se3iqnhoufwC'></span></strong>
+    
+    **Zemin Sun**, Yanheng Liu\*, Jian Wang, Guofa Li, Carie Anil, Keqiang Li, Xinyu Guo, Geng Sun\*, Daxin Tian\*, and Dongpu Cao.
+  </div>
 </div>
 
 1. **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404), *IEEE Transactions on Mobile Computing*.* **(IF=7.9) (SCI, CCF A类期刊)**
