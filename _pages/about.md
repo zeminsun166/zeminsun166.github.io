@@ -38,7 +38,7 @@ redirect_from:
 
 # 发表文章 {#publications}
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2024</div><img src='images/paper/TJCCT.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2024</div><img src='images/paper/TJCCT.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404)\\
 **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. 
@@ -64,7 +64,7 @@ redirect_from:
 *IEEE Transactions on Mobile Computing*, 23(2), 2024: 1655-1673. **(IF=7.9) 
 (SCI, CCF A 类期刊) (ESI高被引论文，IEEE TMC Popular Article)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:aqlVkmm33-oC'></span></strong>
 </div>
-</div>
+</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2021</div><img src='images/paper/survey.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -75,9 +75,9 @@ redirect_from:
 </div>
 </div>
 
-1. Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung. [Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/) *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊) (IEEE TMC Popular Article)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:_kc_bZDykSQC'></span></strong>
+1. Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung. [Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/) *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊) (IEEE TMC Popular Article)**
 2. Geng Sun, Minghua Yuan, **Zemin Sun\***, Jiacheng Wang, Hongyang Du, Dusit Niyato, Zhu Han, and Dong In Kim. [Online Collaborative Resource Allocation and Task Offloading for Multi-access Edge Computing](https://ieeexplore.ieee.org/document/11039083), *IEEE Transactions on Mobile Computing*, 2025, doi: 10.1109/TMC.2025.3580365. **(IF=7.9, CCF A类期刊)** 
-3. Geng Sun, Jiaxu Wu,  **Zemin Sun\***, Long He, Jiacheng Wang, Dusit Niyato, Abbas Jamalipour, Shiwen Mao. JC5A: Service Delay Minimization for Aerial MEC-assisted Industrial Cyber-Physical Systems, *IEEE Transactions on Services Computing*, 2025.  **(IF=5.8) (SCI, CCF A类期刊)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:7PzlFSSx8tAC'></span></strong>
+3. Geng Sun, Jiaxu Wu,  **Zemin Sun\***, Long He, Jiacheng Wang, Dusit Niyato, Abbas Jamalipour, Shiwen Mao. JC5A: Service Delay Minimization for Aerial MEC-assisted Industrial Cyber-Physical Systems, *IEEE Transactions on Services Computing*, 2025.  **(IF=5.8) (SCI, CCF A类期刊)**
 4. Geng Sun, Yixian Wang, **Zemin Sun\***, Qingqing Wu, Jiawen Kang, Dusit Niyato, Victor CM Leung. [Multi-objective Optimization for Multi-UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10643301), *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3446819. **(IF=7.9, CCF A类期刊）（IEEE TMC Popular Article)** 
 5. Geng Sun, Xiaoya Zheng, **Zemin Sun\***, Qingqing Wu\*, Jiahui Li, Yanheng Liu, and Victor CM Leung. [UAV-enabled Secure Communications via Collaborative Beamforming with Imperfect Eavesdropper Information](https://ieeexplore.ieee.org/abstract/document/10119186/), *IEEE Transactions on Mobile Computing*, 23(4): 3291-3308, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊)**
 6. **Zemin Sun**, Yanheng Liu, Jian Wang\*, Fang Mei, Weiwen Deng, and Yuming Ge. [Non-cooperative Game of Throughput and Hash Length for Adaptive Merkle Tree in Mobile Wireless Networks](https://ieeexplore.ieee.org/abstract/document/8642907/), *IEEE Transactions on Vehicular Technology*, 68(5): 4625-4650, 2019. **(IF=5.3) (中科院2区)**
