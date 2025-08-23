@@ -66,14 +66,14 @@ redirect_from:
 </div>
 </div> -->
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2021</div><img src='images/paper/survey.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2021</div><img src='images/paper/survey.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Applications of Game Theory in Vehicular Networks: A Survey](https://ieeexplore.ieee.org/abstract/document/9524815/)\\
 **Zemin Sun**, Yanheng Liu\*, Jian Wang, Guofa Li, Carie Anil, Keqiang Li, Xinyu Guo, Geng Sun\*, Daxin Tian\*, and Dongpu Cao. 
 
 *IEEE Communications Surveys & Tutorials*, 23(4): 2660-2710, 2021. **(IF=33.8) (中科院1区)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:Se3iqnhoufwC'></span></strong>  
 </div>
-</div>
+</div> -->
 
 1. Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung. [Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/) *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊) (IEEE TMC Popular Article)**
 2. Geng Sun, Minghua Yuan, **Zemin Sun\***, Jiacheng Wang, Hongyang Du, Dusit Niyato, Zhu Han, and Dong In Kim. [Online Collaborative Resource Allocation and Task Offloading for Multi-access Edge Computing](https://ieeexplore.ieee.org/document/11039083), *IEEE Transactions on Mobile Computing*, 2025, doi: 10.1109/TMC.2025.3580365. **(IF=7.9, CCF A类期刊)** 
