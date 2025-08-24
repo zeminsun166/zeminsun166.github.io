@@ -2,23 +2,107 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- 主页 - 最高优先级 -->
   <url>
     <loc>{{ site.url }}/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/"/>
   </url>
+
+  <!-- 中文关于页面 -->
   <url>
     <loc>{{ site.url }}/about/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/about/"/>
   </url>
+
+  <!-- 英文关于页面 -->
   <url>
     <loc>{{ site.url }}/en/about/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en/about/"/>
   </url>
+
+  <!-- 学术论文页面 -->
+  <url>
+    <loc>{{ site.url }}/#publications</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/#publications"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/#publications"/>
+  </url>
+
+  <!-- 项目经历页面 -->
+  <url>
+    <loc>{{ site.url }}/#projects</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/#projects"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/#projects"/>
+  </url>
+
+  <!-- 专利页面 -->
+  <url>
+    <loc>{{ site.url }}/#patents</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/#patents"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/#patents"/>
+  </url>
+
+  <!-- 教育经历页面 -->
+  <url>
+    <loc>{{ site.url }}/#educations</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/#educations"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/#educations"/>
+  </url>
+
+  <!-- 学术服务页面 -->
+  <url>
+    <loc>{{ site.url }}/#services</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/#services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/#services"/>
+  </url>
+
+  <!-- 获奖情况页面 -->
+  <url>
+    <loc>{{ site.url }}/#awards</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/#awards"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/#awards"/>
+  </url>
+
+  <!-- Google Scholar 统计页面 -->
+  <url>
+    <loc>{{ site.url }}/google-scholar-stats/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="{{ site.url }}/google-scholar-stats/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/google-scholar-stats/"/>
+  </url>
+
 </urlset> 
