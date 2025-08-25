@@ -38,48 +38,11 @@ redirect_from:
 
 # 发表文章 {#publications}
 
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2024</div><img src='images/paper/TJCCT.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404)\\
-**Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. 
-
- *IEEE Transactions on Mobile Computing*.* **(IF=7.9) (SCI, CCF A类期刊)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:QIV2ME_5wuYC'></span></strong>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2024</div><img src='images/paper/TJCCT2.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC](https://arxiv.org/abs/2404.04597)\\
-**Zemin Sun**, Geng Sun\*, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, 
-
-*IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:7PzlFSSx8tAC'></span></strong>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2024</div><img src='images/paper/Bargain-match.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10024868/) \\
-**Zemin Sun**, Geng Sun\*, Yanheng Liu, Jian Wang, and Dongpu Cao. 
-
-*IEEE Transactions on Mobile Computing*, 23(2), 2024: 1655-1673. **(IF=7.9) 
-(SCI, CCF A 类期刊) (ESI高被引论文，IEEE TMC Popular Article)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:aqlVkmm33-oC'></span></strong>
-</div>
-</div> -->
-
-<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IEEE 2021</div><img src='images/paper/survey.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Applications of Game Theory in Vehicular Networks: A Survey](https://ieeexplore.ieee.org/abstract/document/9524815/)\\
-**Zemin Sun**, Yanheng Liu\*, Jian Wang, Guofa Li, Carie Anil, Keqiang Li, Xinyu Guo, Geng Sun\*, Daxin Tian\*, and Dongpu Cao. 
-
-*IEEE Communications Surveys & Tutorials*, 23(4): 2660-2710, 2021. **(IF=33.8) (中科院1区)** <strong><span class='show_paper_citations' data='TJtQW8gAAAAJ:Se3iqnhoufwC'></span></strong>  
-</div>
-</div> -->
-
 1. **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404), *IEEE Transactions on Mobile Computing*, 2025. **(IF=7.9) (SCI, CCF A类期刊)** 
-2. **Zemin Sun**, Geng Sun\*, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, [A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC]*IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)**
+2. **Zemin Sun**, Geng Sun\*, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, [A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC](https://ieeexplore.ieee.org/abstract/document/10621095) *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)**
 3. **Zemin Sun**, Geng Sun\*, Yanheng Liu, Jian Wang, and Dongpu Cao, [BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10024868/), 2024. **(IF=7.9) (SCI, CCF A 类期刊) (ESI高被引论文，ESI 热点论文，IEEE TMC Popular Article)**
 4. Geng Sun, Minghua Yuan, **Zemin Sun\***, Jiacheng Wang, Hongyang Du, Dusit Niyato, Zhu Han, and Dong In Kim. [Online Collaborative Resource Allocation and Task Offloading for Multi-access Edge Computing](https://ieeexplore.ieee.org/document/11039083), *IEEE Transactions on Mobile Computing*, 2025. **(IF=7.9, CCF A类期刊)** 
-5. Geng Sun, Jiaxu Wu,  **Zemin Sun\***, Long He, Jiacheng Wang, Dusit Niyato, Abbas Jamalipour, Shiwen Mao. JC5A: Service Delay Minimization for Aerial MEC-assisted Industrial Cyber-Physical Systems, *IEEE Transactions on Services Computing*, 2025. **(IF=5.8) (SCI, CCF A类期刊)**
+5. Geng Sun, Jiaxu Wu,  **Zemin Sun\***, Long He, Jiacheng Wang, Dusit Niyato, Abbas Jamalipour, Shiwen Mao. [JC5A: Service Delay Minimization for Aerial MEC-assisted Industrial Cyber-Physical Systems](https://ieeexplore.ieee.org/abstract/document/11095839), *IEEE Transactions on Services Computing*, 2025. **(IF=5.8) (SCI, CCF A类期刊)**
 6. Geng Sun, Yixian Wang, **Zemin Sun\***, Qingqing Wu, Jiawen Kang, Dusit Niyato, Victor CM Leung. [Multi-objective Optimization for Multi-UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10643301), *IEEE Transactions on Mobile Computing*, 2024. **(IF=7.9, CCF A类期刊）（IEEE TMC Popular Article)** **(IF=7.9, CCF A类期刊)**
 7. Long He, Geng Sun\*, **Zemin Sun\***, Qingqing Wu, Jiawen Kang, Dusit Niyato, Zhu Han, and Victor CM Leung. [QoE Maximization for Multiple-UAV-Assisted Multi-Access Edge Computing via an Online Joint Optimization Approach](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11062806) *IEEE Transactions on Networking*, 2025. **(IF=5.7) (SCI, CCF A类期刊)**
 8. Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung. [Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/) *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊) (IEEE TMC Popular Article)**
