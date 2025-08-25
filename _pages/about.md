@@ -75,6 +75,9 @@ redirect_from:
 </div>
 </div> -->
 
+1. **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404)
+ *IEEE Transactions on Mobile Computing*, 2025. **(IF=7.9) (SCI, CCF A类期刊)** 
+
 1. Geng Sun, Long He, **Zemin Sun\***, Qingqing Wu, Shuang Liang\*, Jiahui Li, Dusit Niyato, and Victor CM Leung. [Joint Task Offloading and Resource Allocation in Aerial-Terrestrial UAV Networks with Edge and Fog Computing for Post-Disaster Rescue](https://ieeexplore.ieee.org/abstract/document/10382630/) *IEEE Transactions on Mobile Computing*, 2024, doi: 10.1109/TMC.2024.3350886. **(IF=7.9, CCF A类期刊) (IEEE TMC Popular Article)**
 2. Geng Sun, Minghua Yuan, **Zemin Sun\***, Jiacheng Wang, Hongyang Du, Dusit Niyato, Zhu Han, and Dong In Kim. [Online Collaborative Resource Allocation and Task Offloading for Multi-access Edge Computing](https://ieeexplore.ieee.org/document/11039083), *IEEE Transactions on Mobile Computing*, 2025, doi: 10.1109/TMC.2025.3580365. **(IF=7.9, CCF A类期刊)** 
 3. Geng Sun, Jiaxu Wu,  **Zemin Sun\***, Long He, Jiacheng Wang, Dusit Niyato, Abbas Jamalipour, Shiwen Mao. JC5A: Service Delay Minimization for Aerial MEC-assisted Industrial Cyber-Physical Systems, *IEEE Transactions on Services Computing*, 2025.  **(IF=5.8) (SCI, CCF A类期刊)**
