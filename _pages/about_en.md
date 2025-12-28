@@ -29,8 +29,8 @@ In the past 5 years, as **first author or corresponding author**, i has publishe
 - Generative Artificial Intelligence
 
 # Education and Work Experience {#educations}
-- 2025.08 - Present，Jilin University, College of Computer Science and Technology, Assistant Professor
-- 2022.09 - 2025.08, Jilin University, College of Computer Science and Technology, Dingxin Scholar Postdoctoral Fellow, Supervisor: [Prof. Geng Sun](https://sungeng207.github.io/)
+- 2025.12 - Present，Jilin University, College of Computer Science and Technology, Assistant Professor
+- 2022.09 - 2025.09, Jilin University, College of Computer Science and Technology, Dingxin Scholar Postdoctoral Fellow, Supervisor: [Prof. Geng Sun](https://sungeng207.github.io/)
 - 2019.09 - 2020.10, University of Waterloo, Canada, Vehicle Engineering, Joint Ph.D. Training, Supervisor: Prof. Dongpu Cao
 - 2018.09 - 2022.07, Jilin University, Computer Application Technology, Ph.D., Supervisor: [Prof. Yanheng Liu](https://ccst.jlu.edu.cn/info/1367/19050.htm)
 - 2015.09 - 2018.07, Jilin University, Computer Application Technology, Master's, Supervisor: [Prof. Yanheng Liu](https://ccst.jlu.edu.cn/info/1367/19050.htm)
