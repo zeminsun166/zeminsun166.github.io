@@ -154,9 +154,3 @@ In the past 5 years, as **first author or corresponding author**, i has publishe
 - China Scholarship Council Government-sponsored Study Abroad Scholarship
 - National Scholarship for Master's Students
 - Jilin University 2018 Outstanding Graduate Student
-<!-- - Jilin University Outstanding Graduate Student
-- Jilin University Outstanding Graduate Student
-- Jilin University Outstanding Master's Thesis
-- Jilin University First-Class Graduate Student Excellence Scholarship
-- Jilin University Second-Class Graduate Student Excellence Scholarship
-- Jilin University Graduate Student Academic Performance Scholarship (twice)  -->
