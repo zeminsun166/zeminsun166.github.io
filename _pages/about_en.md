@@ -104,11 +104,13 @@ In the past 5 years, as **first author or corresponding author**, i has publishe
 27. Long He, Geng Sun\*, **Zemin Sun**, Pengfei Wang, Jiahui Li, Shuang Liang, Dusit Niyato. [An Online Joint Optimization Approach for QoE Maximization in UAV-Enabled Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10621306), *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)**
 28. Jing Zhang, Dongyang Gao, Jiacheng Wang, **Zemin Sun**, Shuang Liang, Ruichen Zhang, Geng Sun\*, [Real-Time Beam Tracking Algorithm for UAVs in Millimeter-wave Networks with Adaptive Beamwidth Adjustment](https://ieeexplore.ieee.org/abstract/document/11059576), *The 21st International Wireless Communications & Mobile Computing Conference (IEEE IWCMC 2025)*. **(Best Paper Award)**
 
+# Teaching Reform Projects
+- Jilin Province Graduate Education Teaching Reform Project (2025), "Data Communications" Course Design and Development Based on the PAD Class Model, 2024.10 to 2026.10 (Participant 3/6)
 
 # Research Projects {#projects}
 1. National Natural Science Foundation of China Young Science Foundation Program (Category C), "Joint Optimization Methods for Quality of Experience in Low-Altitude Mobile Edge Computing under Dense Scenarios (62502179)", 2026.01 to 2028.12, 300,000 CNY (**Principal Investigator**)
 2. Scientific Research Project of Jilin Provincial Department of Education, "Efficient Task Processing Methods for Low-Altitude UAV-Assisted Edge Computing Networks", 2026-01 to 2027-12, 25000 RMB (**Principal Investigator**)
-3. China Postdoctoral Science Foundation General Project, "Research on Elastic Collaborative Optimization Methods for Task Offloading and Resource Allocation in Mobile Edge Networks (2023M731282)", 80,000 RMB (**Principal Investigator**)
+3. China Postdoctoral Science Foundation General Project, "Research on Elastic Collaborative Optimization Methods for Task Offloading and Resource Allocation in Mobile Edge Networks (2023M731282)", 2023.08 to 2025.12, 80,000 RMB (**Principal Investigator**)
 4. China Postdoctoral Science Foundation, Postdoctoral International Academic Exchange Project, "Two-timescale Joint Optimization Method for UAV-assisted Mobile Edge Computing", 2024-11 to 2025-06, 20,000 RMB (**Principal Investigator**)
 5. National Natural Science Foundation of China General Project, "Research on Satellite IoT Ground-to-Space Collaborative Beamforming Communication Theory and Optimization Methods (62471200)", 2025-01 to 2028-12, 490,000 RMB (Participant)
 6. National Natural Science Foundation of China General Project, "Game Theory and Key Technologies for 5G Heterogeneous Vehicular Network Communication Quality and Security (62172186)", 2022-01 to 2025-12, 580,000 RMB (Participant)
@@ -130,6 +132,7 @@ In the past 5 years, as **first author or corresponding author**, i has publishe
 - Geng Sun, Xiaoya Zheng, Jiahui Li, Aimin Wang, Shuang Liang, Zhao Liu, **Zemin Sun**, Yanheng Liu, A Method for UAV Swarm Secure Communication, Patent No.: ZL202210003107.6 
 
 # Academic Services {#services}
+- Gest Editor, IEEE Internet of Things Magazine (2025), Special Issue on "IoT Embodied AI: Intelligent Sensing, Communication and Control"
 - Member of China Communications Society
 - Technical Program Committee Member of ICA3PP 2023 International Conference
 - Reviewer for multiple top-tier journals and academic conferences
@@ -143,15 +146,17 @@ In the past 5 years, as **first author or corresponding author**, i has publishe
   - IEEE Transactions on Emerging Topics in Computing 
 
 # Awards and Honors {#awards}
-- China Business Federation Science and Technology Award Second Prize (2023): Distributed Collaborative Beamforming Dynamic Multi-objective Optimization Method and Application
+- IEEE Communications Society 2025 Exemplary Reviewer (IEEE TNSE)
+- The 21st International Wireless Communications & Mobile Computing Conference (IEEE IWCMC 2025) Best Paper Award
 - ACM China Outstanding Doctoral Dissertation Award (2024, Changchun Branch) (8/12)
+- China Business Federation Science and Technology Award Second Prize (2023): Distributed Collaborative Beamforming Dynamic Multi-objective Optimization Method and Application
 - Paper "BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks" won the 2022-2023 China Electronics Society IoT Expert Committee Outstanding Journal Paper Award
 - China Scholarship Council Government-sponsored Study Abroad Scholarship
 - National Scholarship for Master's Students
 - Jilin University 2018 Outstanding Graduate Student
-- Jilin University Outstanding Graduate Student
+<!-- - Jilin University Outstanding Graduate Student
 - Jilin University Outstanding Graduate Student
 - Jilin University Outstanding Master's Thesis
 - Jilin University First-Class Graduate Student Excellence Scholarship
 - Jilin University Second-Class Graduate Student Excellence Scholarship
-- Jilin University Graduate Student Academic Performance Scholarship (twice) 
+- Jilin University Graduate Student Academic Performance Scholarship (twice)  -->
