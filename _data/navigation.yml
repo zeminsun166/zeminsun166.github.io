@@ -3,6 +3,10 @@ main_zh:
     url: "#about-me"
     section: "about-me"
 
+  - title: "招生信息"
+    url: "#recruitment"
+    section: "recruitment"
+
   - title: "教育经历"
     url: "#educations"
     section: "educations"
@@ -31,6 +35,10 @@ main_en:
   - title: "Homepage"
     url: "#about-me"
     section: "about-me"
+
+  - title: "Recruitment"
+    url: "#recruitment"
+    section: "recruitment"
 
   - title: "Education"
     url: "#educations"
