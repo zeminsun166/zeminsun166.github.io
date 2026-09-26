@@ -48,7 +48,7 @@ redirect_from:
 # 发表文章 {#publications}
 
 - Xu Qiao, Jian Wang, **Zemin Sun\*** and Yixian Wang\*, "[Traffic-Aware Embodied Edge Intelligence for Vehicular Networks: An Integrated VLM and MAPPO Approach](https://ieeexplore.ieee.org/abstract/document/11616594)" in *IEEE Transactions on Cognitive Communications and Networking*, vol. 12, pp. 10573-10588, 2026, doi: 10.1109/TCCN.2026.3715701. **(IF=8.081) (SCI, 中科院2区)**
-- **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404), *IEEE Transactions on Mobile Computing*, 2025. **(IF=7.9) (SCI, CCF A类)** 
+- **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404), *IEEE Transactions on Mobile Computing*, 2025. **(IF=7.9) (SCI, CCF A类)（ESI高被引论文）** 
 - **Zemin Sun**, Geng Sun\*, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, [A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC](https://ieeexplore.ieee.org/abstract/document/10621095) *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)**
 -  **Zemin Sun**, Geng Sun\*, Yanheng Liu, Jian Wang, and Dongpu Cao, [BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10024868/), 2024. **(IF=7.9) (SCI, CCF A 类) (ESI高被引论文，ESI 热点论文，IEEE TMC Popular Article)**
 - Geng Sun, Siyi Chen, **Zemin Sun***, Long He, Jiacheng Wang, Dusit Niyato, Zhu Han, and Dong In Kim, [Joint Computing Resource Allocation and Task Offloading in Vehicular Fog Computing Systems Under Asymmetric Information](https://www.computer.org/csdl/journal/tm/5555/01/11223994/2blzWvbyfkI), 2024. **(IF=7.9) (SCI, CCF A 类)**
@@ -126,7 +126,7 @@ redirect_from:
 # 获奖情况 {#awards}
 - IEEE Communications Society 2025年度优秀审稿人 (IEEE TNSE)
 - The 21st International Wireless Communications & Mobile Computing Conference （IEEE IWCMC 2025），最佳论文奖
-- ACM中国优博奖 （2024年，长春分会）
+- ACM中国（长春分会）优秀博士学位论文奖，2024
 - 中国商业联合会科学技术奖二等奖 （2023年）：分布式协作波束成形动态多目标优化方法及应用 （8/12）
 - 论文 "BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks" 获2022-2023中国电子学会物联网专业委员会优秀期刊论文
 - 国家留学基金委公派留学奖学金
