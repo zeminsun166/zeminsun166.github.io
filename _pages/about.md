@@ -47,7 +47,7 @@ redirect_from:
 
 # 发表文章 {#publications}
 
-- Xu Qiao, Jian Wang, Zemin Sun and Yixian Wang, "[Traffic-Aware Embodied Edge Intelligence for Vehicular Networks: An Integrated VLM and MAPPO Approach](https://ieeexplore.ieee.org/abstract/document/11616594)" in *IEEE Transactions on Cognitive Communications and Networking*, vol. 12, pp. 10573-10588, 2026, doi: 10.1109/TCCN.2026.3715701. **(IF=8.081) (SCI, 中科院2区)**
+- Xu Qiao, Jian Wang, **Zemin Sun\*** and Yixian Wang\*, "[Traffic-Aware Embodied Edge Intelligence for Vehicular Networks: An Integrated VLM and MAPPO Approach](https://ieeexplore.ieee.org/abstract/document/11616594)" in *IEEE Transactions on Cognitive Communications and Networking*, vol. 12, pp. 10573-10588, 2026, doi: 10.1109/TCCN.2026.3715701. **(IF=8.081) (SCI, 中科院2区)**
 - **Zemin Sun**, Geng Sun\*, Qingqing Wu, Long He, Shuang Liang, Hongyang Pan, Dusit Niyato, Chau Yuen, Victor Leung. [TJCCT: A Two-timescale Approach for UAV-assisted Mobile Edge Computing](https://ieeexplore.ieee.org/abstract/document/10766404), *IEEE Transactions on Mobile Computing*, 2025. **(IF=7.9) (SCI, CCF A类)** 
 - **Zemin Sun**, Geng Sun\*, Long He, Fang Mei, Shuang Liang, and Yanheng Liu, [A Two Time-Scale Joint Optimization Approach for UAV-assisted MEC](https://ieeexplore.ieee.org/abstract/document/10621095) *IEEE International Conference on Computer Communications (IEEE INFOCOM 2024)*. **(CCF A类会议)**
 -  **Zemin Sun**, Geng Sun\*, Yanheng Liu, Jian Wang, and Dongpu Cao, [BARGAIN-MATCH: A Game Theoretical Approach For Resource Allocation and Task Offloading in Vehicular Edge Computing Networks](https://ieeexplore.ieee.org/abstract/document/10024868/), 2024. **(IF=7.9) (SCI, CCF A 类) (ESI高被引论文，ESI 热点论文，IEEE TMC Popular Article)**
